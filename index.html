@@ -119,7 +119,6 @@
 		<!-- } -->
 
 
-
 	
     <!-- <section id="projects-sql-server" class="projects-section bg-light"> -->
 	<!-- put id in, and container -->
@@ -211,24 +210,16 @@
 					<li>Management Reporting Module – used by managers to get reports from the data warehouse and to be able to make financial, marketing and strategy decisions</li>
 					<li>Predictive Analytics Module – usage of machine learning for predicting future hotel trends</li>
 				</ul>
-	  
+
 	  </div>
 	  
-	  
-	<!-- </section> -->
 
-    <section class="container project-container">
-      <div class="container">
-	  
-			<!-- <h1>heading1 needed?</h1> -->
-		
+
        <div class="container">
             <img class="img-fluid" src="img/module.png" alt="">
        </div>	
 
-		<!-- 3C. MODULES DESCRIPTION -->
-	
-    <!-- <section id="projects-sql-server" class="projects-section bg-light"> -->
+
       <div class="container project-container">
 	  
 			<h4>Room Reservation Module</h4>	
@@ -242,31 +233,22 @@
 
 			<h4>Predictive Analysis Module</h4>	
 			<p>This module reveals hotel room reservations trends through analytics. Predictive models enhance business performance, customer retention and profitability. Room reservations data can be filtered and aggregated by date, hotel, location, room type.</p>			
-
 	  
 	  </div>
-	<!-- </section> -->
 
-	
-		<!-- 4. SQL LUCID CHART ERD -->
 
-<div id="projects-sql-server" class="container project-container">
-<h1>ENTITY RELATIONSHIP DIAGRAM (ERD)</h1>
-<div class="container project-container2">
-       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-          <!-- <div class="col-xl-8 col-lg-7"> -->
-            <img class="img-fluid mb-3 mb-lg-0" src="img/erd.png" alt="">
-          <!-- </div> -->
-          <!-- <div class="col-xl-4 col-lg-5"> -->
-            <!-- <div class="featured-text text-center text-lg-left"> -->
-              <!-- <h4>ENTITY RELATIONSHIPS DIAGRAM</h4> -->
-              <!-- <p class="text-black-50 mb-0">eHOTEL SMART RESERVATION SYSTEM</p> -->
-            <!-- </div> -->
-          </div>
+
+	<div id="projects-sql-server" class="container project-container">
+		<h1>ENTITY RELATIONSHIP DIAGRAM (ERD)</h1>
+		<div class="container project-container2">
+			<div class="row align-items-center no-gutters mb-4 mb-lg-5">
+				<img class="img-fluid mb-3 mb-lg-0" src="img/erd.png" alt="">
+			</div>
         </div>
-</div>			
-		<!-- 5. SQL SERVER CODE FOR SCHEMA -->
-    <!-- <section id="projects-sql-server" class="projects-section bg-light"> -->
+	</div>		
+	
+	
+
       <div class="container project-container">
 	  
 			<h1>DATABASE SCHEMA (SQL SERVER)</h1>			
@@ -346,13 +328,9 @@ CREATE TABLE Reservation
 );
 			</pre>
 			</code>
-	  
 	  </div>
-	<!-- </section> -->
 
 
-<!-- Inserting data, reading data, updating data, deleting data JECA TEXT ADD -->
-    <!-- <section id="projects-sql-server" class="projects-section bg-light"> -->
       <div class="container project-container">
 	  
 			<h1>DATABASE CRUD OPERATIONS (SQL SERVER)</h1>			
@@ -387,10 +365,8 @@ SET IDENTITY_INSERT [dbo].[Hotel] OFF
 			</code>
 	  
 	  </div>
-	<!-- </section> -->
 
 		
-    <!-- <section id="projects-sql-server" class="projects-section bg-light"> -->
       <div class="container project-container">
 	  
 			<h1>DATABASE DATA ANALYSIS & REPORTING (SQL SERVER)</h1>			
@@ -406,7 +382,6 @@ JOIN Room R ON RR.RoomId = R.Id
 JOIN Hotel H ON R.HotelId = H.Id;
 			</pre>
 			</code>
-
 
 
 			<h4>Reservation Listing for a specified time range</h4>
@@ -442,7 +417,6 @@ ORDER BY RR.ReservationDate ASC, C.FirstName ASC, C.LastName ASC;
 			</code>
 
 
-
 			<h4>Total Count Hotels</h4>
 			<p>The following query shows the total number of hotels.</p>
 			
@@ -452,7 +426,6 @@ SELECT COUNT(*) TotalCountHotels
 FROM Hotel
 			</pre>
 			</code>
-
 
 
 			<h4>Total Reservations per day for a specific hotel in a specific timerange</h4>
@@ -508,14 +481,11 @@ HAVING COUNT(*) > 1 AND COUNT(*) < 5
 ORDER BY RR.ReservationDate ASC, C.FirstName ASC, C.LastName ASC;
 			</pre>
 			</code>
-
 			
 	  </div>
-	<!-- </section>	 -->
 
-		<!-- 8. QLIKVIEW SCRIPT CODE -->
-<!-- Inserting data, reading data, updating data, deleting data JECA TEXT ADD -->
-    <!-- <section id="projects-sql-server" class="projects-section bg-light"> -->
+
+
       <div id="projects-qlikview" class="container project-container">
 	  
 			<h1>QLIKVIEW LOAD SCRIPT</h1>			
@@ -674,15 +644,14 @@ Hotel.qvd(qvd);
 			</code>
 	  
 	  </div>
-	<!-- </section> -->
+
 
 	<div class="container project-container">
 		<h1>QLIKVIEW DATA MODEL</h1>
 		<div class="container project-container2">
 				<img class="img-fluid mb-3 mb-lg-0" src="img/datamodel.png" alt="">
 		</div>
-	<!-- </div> -->
-			<h2></h2>
+
 			<h4>Star schema (eHotel Smart Reservation System)</h4>
 			
 			<ul style="list-style-type:square">
@@ -692,7 +661,6 @@ Hotel.qvd(qvd);
 	</div>	
 
 		
-		<!-- 9. QLIKVIEW DASHBOARD,  CHARTS -->
     <div class="container project-container">
 		<h1>QLIKVIEW DATA VISUALISATIONS</h1>
 		<div class="container project-container2">
