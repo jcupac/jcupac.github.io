@@ -30,16 +30,12 @@
 		.project-container {
 			margin-top: 70px;
 		}
-		
-
 	</style>
 	
 	<style>
 		.project-container2 {
 			margin-top: 40px;
 		}
-		
-
 	</style>
 	
   </head>
@@ -79,7 +75,8 @@
 
     <!-- Header -->
     <header class="masthead">
-      <div class="container d-flex h-100 align-items-center">
+      <!-- <div class="container d-flex h-100 align-items-center"> -->
+	  <div class="container">
         <div class="mx-auto text-center">
           <h1 class="mx-auto my-0 text-uppercase">HI : )</h1>
           <h2 class="text-white-50 mx-auto mt-2 mb-5">BI solutions for successful businesses</h2>
@@ -90,13 +87,16 @@
 
     <!-- Projects Section -->
     <!-- <section id="projects" class="projects-section bg-light"> -->
-      <div class="container">
-		<div id="projects-sql-server" class="projects-section bg-light">
-        <!-- Featured Project Row -->
-        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-          <div class="col-xl-8 col-lg-7">
-            <img class="img-fluid mb-3 mb-lg-0" src="img/dashboard.png" alt="">
-          </div>
+      <!-- <div class="container"> MAN THIS CAUSES WEIRD CHANGES-->
+		<div id="projects" class="projects-section bg-light">
+		<!-- <div class="container"> -->
+			<div class="row align-items-center no-gutters mb-4 mb-lg-5">
+			  <div class="col-xl-8 col-lg-7">
+				<img class="img-fluid mb-3 mb-lg-0" src="img/dashboard.png" alt="">
+			  </div>
+		<!-- </div>	   -->
+
+		  
           <div class="col-xl-4 col-lg-5">
             <div class="featured-text text-center text-lg-left">
               <h4>eHotel Smart Reservation System</h4>
@@ -113,15 +113,11 @@
 			<!-- font-size:50px; -->
 		<!-- } -->
 
-		
-		
-		<!-- 1. BUSINESS CASE 3 PARAGRAPHS -->
-		<!-- 2. PROJECT PLAN CHARTER -->
-		<!-- 2A. PROJECT SCOPE 3 PARAGRAPHS -->
+
 	
     <!-- <section id="projects-sql-server" class="projects-section bg-light"> -->
 	<!-- put id in, and container -->
-      <div id="projects-sql-server" class="container project-container">
+      <div class="container project-container">
 	  
 			<h1>BUSINESS CASE</h1>			
 			
@@ -138,13 +134,12 @@
 			
 			<h3>3. Efficiency</h3>
 			<p>The eHotel Smart Reservation System has a user-friendly platform, is intuitive to navigate and easily manageable. It is interactive and displays real-time availability and pricing. Furthermore, security is ensured and all personal information stays private through data encryption processes.</p>			
-
 	  
 	  </div>
 	<!-- </section>		 -->
 
 	
-	<div id="projects-sql-server" class="container project-container">
+	<div class="container project-container">
 	  
 			<h1>PROJECT PLAN / PROJECT CHARTER</h1>
 			
@@ -152,6 +147,7 @@
 			<p>The scope of the project is to deliver an online hotel reservation system which enables customers to make hotel reservations. It lowers administrative costs and  increases profitability. Also, it simplifies the management of reservations, is time-efficient and allows the optimization of marketing schemes.</p>
 			
 			<h3>Resource Plan</h3>
+	</div>
 
       <div class="container">
        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
@@ -208,7 +204,7 @@
 		<!-- 3A. SYSTEM OVERVIEW 4 BULLET POINTS -->		
 	
     <!-- <section id="projects-sql-server" class="projects-section bg-light"> -->
-      <div id="projects-sql-server" class="container project-container">
+      <div class="container project-container">
 	  
 			<h1>REQUIREMENTS SPECIFICATIONS</h1>
 			<p>The eHotel chain has multiple hotels. Each hotel has rooms and employees. Rooms have to be reserved in advance. Rooms have variable costs. Customer data and reservation details are stored.</p>					
@@ -228,7 +224,7 @@
 	<!-- </section> -->
 
 
-    <section id="projects-sql-server" class="container project-container">
+    <section class="container project-container">
       <div class="container">
 	  
 			<!-- <h1>heading1 needed?</h1> -->
@@ -242,7 +238,7 @@
 		<!-- 3C. MODULES DESCRIPTION -->
 	
     <!-- <section id="projects-sql-server" class="projects-section bg-light"> -->
-      <div id="projects-sql-server" class="container project-container">
+      <div class="container project-container">
 	  
 			<h4>Room Reservation Module</h4>	
 			<p>This module enables users to make reservations. The user selects the date, hotel, room type, length of stay. Date refers to the date of their estimated check-in date. There are different room types – including standard, double, family and suite.</p>			
@@ -262,9 +258,8 @@
 
 	
 		<!-- 4. SQL LUCID CHART ERD -->
-<!-- ENTITY RELATIONSHIP DIAGRAM (ERD) ADD TEXT JECA -->
 
-<div class="container project-container">
+<div id="projects-sql-server" class="container project-container">
 <h1>ENTITY RELATIONSHIP DIAGRAM (ERD)</h1>
 <div class="container project-container2">
        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
@@ -281,9 +276,9 @@
 </div>			
 		<!-- 5. SQL SERVER CODE FOR SCHEMA -->
     <!-- <section id="projects-sql-server" class="projects-section bg-light"> -->
-      <div id="projects-sql-server" class="container project-container">
+      <div class="container project-container">
 	  
-			<h1>DATABASE SCHEMA IMPLEMENTATION (SQL SERVER)</h1>			
+			<h1>DATABASE SCHEMA (SQL SERVER)</h1>			
 
 			<pre class='language-sql'>
 			<code>
@@ -367,7 +362,7 @@ CREATE TABLE Reservation
 
 <!-- Inserting data, reading data, updating data, deleting data JECA TEXT ADD -->
     <!-- <section id="projects-sql-server" class="projects-section bg-light"> -->
-      <div id="projects-sql-server" class="container project-container">
+      <div class="container project-container">
 	  
 			<h1>DATABASE CRUD OPERATIONS (SQL SERVER)</h1>			
 			<p>Inserting data, reading data, updating data, deleting data</p>			
@@ -405,7 +400,7 @@ SET IDENTITY_INSERT [dbo].[Hotel] OFF
 
 		
     <!-- <section id="projects-sql-server" class="projects-section bg-light"> -->
-      <div id="projects-sql-server" class="container project-container">
+      <div class="container project-container">
 	  
 			<h1>DATABASE DATA ANALYSIS & REPORTING (SQL SERVER)</h1>			
 			<h4>Reservation Listing</h4>
@@ -530,7 +525,7 @@ ORDER BY RR.ReservationDate ASC, C.FirstName ASC, C.LastName ASC;
 		<!-- 8. QLIKVIEW SCRIPT CODE -->
 <!-- Inserting data, reading data, updating data, deleting data JECA TEXT ADD -->
     <!-- <section id="projects-sql-server" class="projects-section bg-light"> -->
-      <div id="projects-sql-server" class="container project-container">
+      <div id="projects-qlikview" class="container project-container">
 	  
 			<h1>QLIKVIEW LOAD SCRIPT</h1>			
 
@@ -709,7 +704,7 @@ Hotel.qvd(qvd);
 		
 		<!-- 9. QLIKVIEW DASHBOARD,  CHARTS -->
     <div class="container project-container">
-	<h1>QLIKVIEW DATA MODEL</h1>
+	<h1>QLIKVIEW DATA VISUALISATIONS</h1>
 	<div class="container project-container2">
 		   <div class="row align-items-center no-gutters mb-4 mb-lg-5">
 				<img class="img-fluid mb-3 mb-lg-0" src="img/dashboard.png" alt="">
@@ -720,103 +715,8 @@ Hotel.qvd(qvd);
 
 			
 	</div>
-	 
-	 
-	 <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-          <div class="col-xl-8 col-lg-7">
-            <img class="img-fluid mb-3 mb-lg-0" src="img/.png" alt="">
-          </div>
-          <div class="col-xl-4 col-lg-5">
-            <div class="featured-text text-center text-lg-left">
-              <h4>ENTITY RELATIONSHIPS DIAGRAM</h4>
-              <p class="text-black-50 mb-0">eHOTEL SMART RESERVATION SYSTEM</p>
-            </div>
-          </div>
-        </div>		
 
-		
 	
-	
-	
-
-        <!-- <div class="row justify-content-center no-gutters mb-5 mb-lg-0"> -->
-          <!-- <div class="col-lg-6"> -->
-            <!-- <img class="img-fluid" src="img/demo-image-00.png" alt=""> -->
-          <!-- </div> -->
-          <!-- <div class="col-lg-6"> -->
-            <!-- <div class="bg-black text-center h-100 project"> -->
-              <!-- <div class="d-flex h-100"> -->
-                <!-- <div class="project-text w-100 my-auto text-center text-lg-left"> -->
-                  <!-- <h4 class="text-white">eHotel Reservations System in QlikView</h4> -->
-                  <!-- <p class="mb-0 text-white-50">PROJECT 2 DATA MODEL. This is done in QlikView.</p> -->
-                  <!-- <hr class="d-none d-lg-block mb-0 ml-0"> -->
-                <!-- </div> -->
-              <!-- </div> -->
-            <!-- </div> -->
-          <!-- </div> -->
-        <!-- </div> -->
-
-
-        <!-- <div class="row justify-content-center no-gutters"> -->
-          <!-- <div class="col-lg-6"> -->
-            <!-- <img class="img-fluid" src="img/demo-image-02.png" alt=""> -->
-          <!-- </div> -->
-          <!-- <div class="col-lg-6 order-lg-first"> -->
-            <!-- <div class="bg-black text-center h-100 project"> -->
-              <!-- <div class="d-flex h-100"> -->
-                <!-- <div class="project-text w-100 my-auto text-center text-lg-right"> -->
-                  <!-- <h4 class="text-white">EHotel Resrvations System in QlikView</h4> -->
-                  <!-- <p class="mb-0 text-white-50">PROJECT 2 CHARTS, dashboard. This is done in QlikView</p> -->
-                  <!-- <hr class="d-none d-lg-block mb-0 mr-0"> -->
-                <!-- </div> -->
-              <!-- </div> -->
-            <!-- </div> -->
-          <!-- </div> -->
-        <!-- </div> -->
-		
-      <!-- </div> -->
-    <!-- </section> -->
-	
-	
-    <!-- <section id="projects-sql-server" class="projects-section bg-light"> -->
-      <div id="projects-sql-server" class="container project-container">
-	  
-			<h1>SQL Server</h1>			
-			<h2>This is heading 2</h2>			
-			<h3>This is heading 3</h3>
-			
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis purus neque, imperdiet a imperdiet id, facilisis quis ante. Integer vitae est urna. Nunc luctus libero orci, a ullamcorper nulla ultricies quis. Sed a aliquam nisl. Aenean dolor lacus, auctor eget convallis ut, condimentum at ex. Integer ut lacus nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec tempus scelerisque pharetra. Nam in aliquam justo. Mauris accumsan ac mi sed mattis. Curabitur pulvinar augue non nisi pharetra, ac faucibus enim placerat.</p>			
-			<p>Suspendisse potenti. Ut eget dapibus felis. Donec dignissim urna at augue placerat suscipit. Fusce ante enim, molestie id condimentum at, pellentesque ut nisl. Quisque vitae facilisis lectus. Mauris id sagittis sapien. Donec dignissim vulputate turpis, et vulputate arcu vulputate sit amet. Morbi molestie faucibus vestibulum. Nullam ut lorem condimentum, feugiat libero ut, tincidunt arcu. Nam egestas turpis sit amet massa suscipit, ut volutpat lectus vestibulum. Cras dictum orci in velit egestas placerat. Vivamus vehicula, orci sed convallis consequat, orci neque convallis elit, sed laoreet erat risus a velit.</p>
-
-			<h4>This is heading 4</h4>			
-			<p>Vestibulum sit amet felis nec ipsum rhoncus aliquam nec nec elit. Nam eget nulla feugiat, laoreet lectus id, sodales elit. Proin arcu neque, tristique sed finibus ut, vulputate at justo. Nunc id tellus quis mi elementum pulvinar id sed justo. Vestibulum at quam ipsum. Donec ultricies metus eget dui suscipit, vel consequat purus condimentum. Mauris et erat id urna pulvinar ultrices. Nullam at convallis orci. Aenean ac nibh dui. Aenean nisi massa, ullamcorper sit amet purus at, porta feugiat purus.</p>			
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis purus neque, imperdiet a imperdiet id, facilisis quis ante. Integer vitae est urna. Nunc luctus libero orci, a ullamcorper nulla ultricies quis. Sed a aliquam nisl. Aenean dolor lacus, auctor eget convallis ut, condimentum at ex. Integer ut lacus nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec tempus scelerisque pharetra. Nam in aliquam justo. Mauris accumsan ac mi sed mattis. Curabitur pulvinar augue non nisi pharetra, ac faucibus enim placerat.</p>			
-			<p>Suspendisse potenti. Ut eget dapibus felis. Donec dignissim urna at augue placerat suscipit. Fusce ante enim, molestie id condimentum at, pellentesque ut nisl. Quisque vitae facilisis lectus. Mauris id sagittis sapien. Donec dignissim vulputate turpis, et vulputate arcu vulputate sit amet. Morbi molestie faucibus vestibulum. Nullam ut lorem condimentum, feugiat libero ut, tincidunt arcu. Nam egestas turpis sit amet massa suscipit, ut volutpat lectus vestibulum. Cras dictum orci in velit egestas placerat. Vivamus vehicula, orci sed convallis consequat, orci neque convallis elit, sed laoreet erat risus a velit.</p>
-			
-			<pre class='language-sql'>
-			<code>
-			SELECT *
-			FROM dbo.Hotel
-			WHERE Name = 'me';
-			</pre>
-			</code>
-
-			<h4>This is heading 4</h4>
-			
-			<p>Vestibulum sit amet felis nec ipsum rhoncus aliquam nec nec elit. Nam eget nulla feugiat, laoreet lectus id, sodales elit. Proin arcu neque, tristique sed finibus ut, vulputate at justo. Nunc id tellus quis mi elementum pulvinar id sed justo. Vestibulum at quam ipsum. Donec ultricies metus eget dui suscipit, vel consequat purus condimentum. Mauris et erat id urna pulvinar ultrices. Nullam at convallis orci. Aenean ac nibh dui. Aenean nisi massa, ullamcorper sit amet purus at, porta feugiat purus.</p>			
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis purus neque, imperdiet a imperdiet id, facilisis quis ante. Integer vitae est urna. Nunc luctus libero orci, a ullamcorper nulla ultricies quis. Sed a aliquam nisl. Aenean dolor lacus, auctor eget convallis ut, condimentum at ex. Integer ut lacus nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec tempus scelerisque pharetra. Nam in aliquam justo. Mauris accumsan ac mi sed mattis. Curabitur pulvinar augue non nisi pharetra, ac faucibus enim placerat.</p>
-			
-			<h1>This is heading 1</h1>
-			
-			<p>Suspendisse potenti. Ut eget dapibus felis. Donec dignissim urna at augue placerat suscipit. Fusce ante enim, molestie id condimentum at, pellentesque ut nisl. Quisque vitae facilisis lectus. Mauris id sagittis sapien. Donec dignissim vulputate turpis, et vulputate arcu vulputate sit amet. Morbi molestie faucibus vestibulum. Nullam ut lorem condimentum, feugiat libero ut, tincidunt arcu. Nam egestas turpis sit amet massa suscipit, ut volutpat lectus vestibulum. Cras dictum orci in velit egestas placerat. Vivamus vehicula, orci sed convallis consequat, orci neque convallis elit, sed laoreet erat risus a velit.</p>
-
-	  
-	  </div>
-	<!-- </section> -->
-	
-	
-		
 	
     <!-- About Section -->
     <section id="about" class="about-section text-center">
@@ -824,7 +724,8 @@ Hotel.qvd(qvd);
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2 class="text-white mb-4">About me</h2>
-            <p class="text-white-50">Write something about....... a few lines
+            <p class="text-white-50">Graduated with a Bachelor of Design in Architecture from the University of Sydney, became interested in technology after coding scripts in AutoCAD and ArchiCAD. Subsequently, to further develop skills , learnt Excel VBA and developed a small language-learning application. Recently, became interested in business processes, database design and data reporting and visualization. Learnt ERD, SQL, SQL Server, and QlikView through online tutorials and developed a database system for a hotel chain, designing the database in SQL Server and implementing data visualizations in QlikView. </p>
+			<p class="text-white-50">Aspiring to work as a BI Developer because it would enable me to consolidate, analyze and visualize data to support clients in business decisions. Demonstrated self-initiative, independent-learning and continuous improvement. Motivated by working in dynamic environments and producing high-quality solutions to business problems.</p>
               <!-- <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. more text that I can write</p> -->
           </div>
         </div>
@@ -836,22 +737,17 @@ Hotel.qvd(qvd);
     <!-- Contact Section ... ctrl Q to comment out or // ... --> 
     <section id="contact" class="contact-section bg-black">
       <div class="container">
-
-	  
 	  
 		<div class="row">
-
 			<div class="small text-white-50">
-
 				<h1>Contact me</h1>
-			
+
 				<p>Email: j.cupac@gmail.com</p>
 			
 			</div>		
 	
 		</div>
-	  
-  
+	    
       </div>
     </section>
 
