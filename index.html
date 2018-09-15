@@ -141,7 +141,6 @@
 			<p>The eHotel Smart Reservation System has a user-friendly platform, is intuitive to navigate and easily manageable. It is interactive and displays real-time availability and pricing. Furthermore, security is ensured and all personal information stays private through data encryption processes.</p>			
 	  
 	  </div>
-	<!-- </section>		 -->
 
 	
 	<div class="container project-container">
@@ -192,11 +191,7 @@
      </div>
 
 
-
-		<!-- 3. REQUIREMENTS SPECIFICATIONS 5 PARAGRAPHS -->
-
 	
-    <!-- <section id="projects-sql-server" class="projects-section bg-light"> -->
       <div class="container project-container">
 	  
 			<h2>REQUIREMENTS SPECIFICATIONS</h2>
@@ -239,11 +234,9 @@
 
 
 	<div id="projects-sql-server" class="container project-container">
-		<h1>ENTITY RELATIONSHIP DIAGRAM (ERD)</h1>
+		<h3>ENTITY RELATIONSHIP DIAGRAM (ERD)</h3>
 		<div class="container project-container2">
-			<div class="row align-items-center no-gutters mb-4 mb-lg-5">
 				<img class="img-fluid mb-3 mb-lg-0" src="img/erd.png" alt="">
-			</div>
         </div>
 	</div>		
 	
@@ -383,7 +376,8 @@ JOIN Hotel H ON R.HotelId = H.Id;
 			</pre>
 			</code>
 
-
+			<!-- JECA testing spacng -->
+			<div class="container">
 			<h4>Reservation Listing for a specified time range</h4>
 			<p>The following query provides details regarding all reservations that have been created in the time range between 02.05.2018 – 10.05.2018.</p>
 			
@@ -398,8 +392,10 @@ WHERE RR.ReservationDate BETWEEN '2018-05-02' AND '2018-05-10'
 ORDER BY RR.ReservationDate ASC;
 			</pre>
 			</code>
+			</div>
 
-
+			
+			<div class="container">
 			<h4>Reservation Listing for a specific time range and specific hotel</h4>
 			<p>The following query provides details regarding all reservations that have been created in the time range between 02.05.2018 – 10.05.2018 for Grand Hotel London.</p>
 			
@@ -415,6 +411,7 @@ AND H.Id = 7
 ORDER BY RR.ReservationDate ASC, C.FirstName ASC, C.LastName ASC;
 			</pre>
 			</code>
+			</div>
 
 
 			<h4>Total Count Hotels</h4>
