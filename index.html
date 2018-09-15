@@ -376,9 +376,9 @@ SET IDENTITY_INSERT [dbo].[Hotel] OFF
 			<code>
 SELECT RR.ReservationDate, C.FirstName, C.LastName, R.RoomNumber, RR.NumberGuests, RR.CheckInDate, RR.CheckOutDate, H.Name HotelName
 FROM Reservation RR
-JOIN Customer C ON RR.CustomerId = C.Id
-JOIN Room R ON RR.RoomId = R.Id
-JOIN Hotel H ON R.HotelId = H.Id;
+LEFT JOIN Customer C ON RR.CustomerId = C.Id
+LEFT JOIN Room R ON RR.RoomId = R.Id
+LEFT JOIN Hotel H ON R.HotelId = H.Id;
 			</pre>
 			</code>
 
@@ -393,9 +393,9 @@ JOIN Hotel H ON R.HotelId = H.Id;
 			<code>
 SELECT RR.ReservationDate, C.FirstName, C.LastName, R.RoomNumber, RR.NumberGuests, RR.CheckInDate, RR.CheckOutDate, H.Name HotelName
 FROM Reservation RR
-JOIN Customer C ON RR.CustomerId = C.Id
-JOIN Room R ON RR.RoomId = R.Id
-JOIN Hotel H ON R.HotelId = H.Id
+LEFT JOIN Customer C ON RR.CustomerId = C.Id
+LEFT JOIN Room R ON RR.RoomId = R.Id
+LEFT JOIN Hotel H ON R.HotelId = H.Id
 WHERE RR.ReservationDate BETWEEN '2018-05-02' AND '2018-05-10'
 ORDER BY RR.ReservationDate ASC;
 			</pre>
@@ -412,9 +412,9 @@ ORDER BY RR.ReservationDate ASC;
 			<code>
 SELECT RR.ReservationDate, C.FirstName, C.LastName, R.RoomNumber, RR.NumberGuests, RR.CheckInDate, RR.CheckOutDate, H.Name HotelName
 FROM Reservation RR
-JOIN Customer C ON RR.CustomerId = C.Id
-JOIN Room R ON RR.RoomId = R.Id
-JOIN Hotel H ON R.HotelId = H.Id
+LEFT JOIN Customer C ON RR.CustomerId = C.Id
+LEFT JOIN Room R ON RR.RoomId = R.Id
+LEFT JOIN Hotel H ON R.HotelId = H.Id
 WHERE RR.ReservationDate BETWEEN '2018-05-02' AND '2018-05-10'
 AND H.Id = 7 
 ORDER BY RR.ReservationDate ASC, C.FirstName ASC, C.LastName ASC;
@@ -446,9 +446,9 @@ FROM Hotel
 			<code>
 SELECT RR.ReservationDate, COUNT(*) TotalReservations
 FROM Reservation RR
-JOIN Customer C ON RR.CustomerId = C.Id
-JOIN Room R ON RR.RoomId = R.Id
-JOIN Hotel H ON R.HotelId = H.Id
+LEFT JOIN Customer C ON RR.CustomerId = C.Id
+LEFT JOIN Room R ON RR.RoomId = R.Id
+LEFT JOIN Hotel H ON R.HotelId = H.Id
 WHERE RR.ReservationDate BETWEEN '2018-05-02' AND '2018-05-10'
 AND H.Id = 7
 GROUP BY RR.ReservationDate
@@ -467,9 +467,9 @@ ORDER BY RR.ReservationDate ASC;
 			<code>
 SELECT RR.ReservationDate, C.FirstName, C.LastName, COUNT(*) TotalReservations
 FROM Reservation RR
-JOIN Customer C ON RR.CustomerId = C.Id
-JOIN Room R ON RR.RoomId = R.Id
-JOIN Hotel H ON R.HotelId = H.Id
+LEFT JOIN Customer C ON RR.CustomerId = C.Id
+LEFT JOIN Room R ON RR.RoomId = R.Id
+LEFT JOIN Hotel H ON R.HotelId = H.Id
 WHERE RR.ReservationDate BETWEEN '2018-05-01' AND '2018-05-20'
 AND H.Id = 7
 GROUP BY RR.ReservationDate, C.FirstName, C.LastName 
@@ -488,9 +488,9 @@ ORDER BY RR.ReservationDate ASC, C.FirstName ASC, C.LastName ASC;
 			<code>
 SELECT RR.ReservationDate, C.FirstName, C.LastName, COUNT(*) TotalReservations
 FROM Reservation RR
-JOIN Customer C ON RR.CustomerId = C.Id
-JOIN Room R ON RR.RoomId = R.Id
-JOIN Hotel H ON R.HotelId = H.Id
+LEFT JOIN Customer C ON RR.CustomerId = C.Id
+LEFT JOIN Room R ON RR.RoomId = R.Id
+LEFT JOIN Hotel H ON R.HotelId = H.Id
 WHERE RR.ReservationDate BETWEEN '2018-05-01' AND '2018-05-20'
 AND H.Id = 7
 GROUP BY RR.ReservationDate, C.FirstName, C.LastName 
@@ -527,17 +527,17 @@ FROM Reservation;
 
 UNQUALIFY *;
 
-Inner Join (Reservation)
+Left Join (Reservation)
 LOAD Id as RoomType.Id;
 SQL SELECT *
 FROM RoomType;
 
-Inner Join (Reservation)
+Left Join (Reservation)
 LOAD Id as Hotel.Id;
 SQL SELECT Id
 FROM Hotel;
 
-Inner Join (Reservation)
+Left Join (Reservation)
 LOAD Id as Country.Id;
 SQL SELECT *
 FROM Country;
