@@ -325,8 +325,9 @@ CREATE TABLE Reservation
 	NumberGuests INT NOT NULL,
 	CheckInDate date NOT NULL,
 	CheckOutDate date NOT NULL
-);</pre>
-			</code>
+);</code>
+</pre>
+			
 	  </div>
 
 
@@ -369,22 +370,22 @@ CREATE TABLE Reservation
 	  
 			<h1>DATABASE DATA ANALYSIS & REPORTING (SQL SERVER)</h1>			
 			<h4>Reservation Listing</h4>
-			<p>The following query provides details regarding all reservations that have been created.</p>
+			<p>The following query provides details regarding all reservations that have been created:</p>
 			
 			<pre class='language-sql'>
 <code>SELECT RR.ReservationDate, C.FirstName, C.LastName, R.RoomNumber, RR.NumberGuests, RR.CheckInDate, RR.CheckOutDate, H.Name HotelName
 FROM Reservation RR
 LEFT JOIN Customer C ON RR.CustomerId = C.Id
 LEFT JOIN Room R ON RR.RoomId = R.Id
-LEFT JOIN Hotel H ON R.HotelId = H.Id;</pre>
-			</code>
+LEFT JOIN Hotel H ON R.HotelId = H.Id;</code>
+</pre>
+			
 
-			<!-- JECA testing spacng -->
 			<div class="container project-container">
 			</div>
 			
 			<h4>Reservation Listing for a specified time range</h4>
-			<p>The following query provides details regarding all reservations that have been created in the time range between 02.05.2018 – 10.05.2018.</p>
+			<p>The following query provides details regarding all reservations that have been created in the time range between 02.05.2018 – 10.05.2018:</p>
 			
 			<pre class='language-sql'>
 <code>SELECT RR.ReservationDate, C.FirstName, C.LastName, R.RoomNumber, RR.NumberGuests, RR.CheckInDate, RR.CheckOutDate, H.Name HotelName
@@ -401,7 +402,7 @@ ORDER BY RR.ReservationDate ASC;</pre>
 			</div>
 			
 			<h4>Reservation Listing for a specific time range and specific hotel</h4>
-			<p>The following query provides details regarding all reservations that have been created in the time range between 02.05.2018 – 10.05.2018 for Grand Hotel London.</p>
+			<p>The following query provides details regarding all reservations that have been created in the time range between 02.05.2018 – 10.05.2018 for Grand Hotel London:</p>
 			
 			<pre class='language-sql'>
 <code>SELECT RR.ReservationDate, C.FirstName, C.LastName, R.RoomNumber, RR.NumberGuests, RR.CheckInDate, RR.CheckOutDate, H.Name HotelName
@@ -411,27 +412,27 @@ LEFT JOIN Room R ON RR.RoomId = R.Id
 LEFT JOIN Hotel H ON R.HotelId = H.Id
 WHERE RR.ReservationDate BETWEEN '2018-05-02' AND '2018-05-10'
 AND H.Id = 7 
-ORDER BY RR.ReservationDate ASC, C.FirstName ASC, C.LastName ASC;</pre>
-			</code>
+ORDER BY RR.ReservationDate ASC, C.FirstName ASC, C.LastName ASC;</code>
+</pre>
 			
 
 			<div class="container project-container">
 			</div>
 			
 			<h4>Total Count Hotels</h4>
-			<p>The following query shows the total number of hotels.</p>
+			<p>The following query shows the total number of hotels:</p>
 			
 			<pre class='language-sql'>
 <code>SELECT COUNT(*) TotalCountHotels
-FROM Hotel;</pre>
-			</code>
+FROM Hotel;</code>
+</pre>
 
 
 			<div class="container project-container">
 			</div>
 			
 			<h4>Total Reservations per day for a specific hotel in a specific timerange</h4>
-			<p>The following query provides details regarding total number of reservations that have been created in the time range between 02.05.2018 – 10.05.2018, on a daily basis, for Grand Hotel London.</p>
+			<p>The following query provides details regarding total number of reservations that have been created in the time range between 02.05.2018 – 10.05.2018, on a daily basis, for Grand Hotel London:</p>
 			
 			<pre class='language-sql'>
 <code>SELECT RR.ReservationDate, COUNT(*) TotalReservations
@@ -450,7 +451,7 @@ ORDER BY RR.ReservationDate ASC;</pre>
 			</div>
 			
 			<h4>Number of reservations by Reservation Date, by Customer (from a business perspective, Daily Reservations by Customer)</h4>
-			<p>The following query provides details from a business perspective, regarding Daily Reservations by Customer in the time range between 01.05.2018 – 20.5.2018, for Grand Hotel London.</p>
+			<p>The following query provides details from a business perspective, regarding Daily Reservations by Customer in the time range between 01.05.2018 – 20.5.2018, for Grand Hotel London:</p>
 			
 			<pre class='language-sql'>
 <code>SELECT RR.ReservationDate, C.FirstName, C.LastName, COUNT(*) TotalReservations
@@ -461,15 +462,15 @@ LEFT JOIN Hotel H ON R.HotelId = H.Id
 WHERE RR.ReservationDate BETWEEN '2018-05-01' AND '2018-05-20'
 AND H.Id = 7
 GROUP BY RR.ReservationDate, C.FirstName, C.LastName 
-ORDER BY RR.ReservationDate ASC, C.FirstName ASC, C.LastName ASC;</pre>
-			</code>
+ORDER BY RR.ReservationDate ASC, C.FirstName ASC, C.LastName ASC;</code>
+</pre>
 
 			
 			<div class="container project-container">
 			</div>
 			
 			<h4>Number of reservations by Reservation Date, by Customer for a specific range for number of reservations</h4>
-			<p>The following query provides details regarding the Customers who made more than one reservation and less than five reservations, in the time range between 01.05.2018 – 20.05.2018, for Grand Hotel London.</p>
+			<p>The following query provides details regarding the Customers who made more than one reservation and less than five reservations, in the time range between 01.05.2018 – 20.05.2018, for Grand Hotel London:</p>
 			
 			<pre class='language-sql'>
 <code>SELECT RR.ReservationDate, C.FirstName, C.LastName, COUNT(*) TotalReservations
@@ -499,9 +500,9 @@ ORDER BY RR.ReservationDate ASC, C.FirstName ASC, C.LastName ASC;</code>
 </pre>
 
 
-<p>Loading SQL Server Database Tables</p>
+<p>Loading SQL Server Database Tables:</p>
 <pre class='language-sql'>
-<code>QUALIFY*;
+<code>QUALIFY *;
 
 UNQUALIFY Hotel.Id, Customer.Id, Room.Id, RoomType.Id, Hotel.Id, Country.Id;
 
@@ -574,7 +575,7 @@ FROM HotelDb.dbo.RoomType;
 STORE RoomType INTO [C:\Users\Jeca\Documents\qvd\RoomType.qvd];</code>
 </pre>
 
-<p>Loading qvd Table Files</p>
+<p>Loading qvd Table Files:</p>
 <pre class='language-sql'>
 <code>LOAD Country.Id, 
      Country.Code, 
@@ -635,8 +636,8 @@ LOAD RoomType.Id,
      RoomType.MaxGuests
 FROM
 [C:\Users\Jeca\Documents\qvd\RoomType.qvd]
-(qvd);</pre>
-			</code>
+(qvd);</code>
+</pre>
 	  
 	  </div>
 
@@ -651,7 +652,7 @@ FROM
 			<!-- <img class="img-fluid mb-3 mb-lg-0" src="img/dashboard.png" alt="" img style="border:2px solid black"> -->
 		</div>
 
-		<div class="container project-container2">
+			<!-- <div class="container project-container2"> -->
 			<!-- <h4>- - - SNOWFLAKE SCHEMA (eHotel Smart Reservation System)</h4> -->
 			
 			<!-- <ul style="list-style-type:square"> -->
@@ -679,7 +680,7 @@ FROM
 	
     <!-- About Section -->
     <section id="about" class="about-section text-center">
-      <div class="container">
+      <!-- <div class="container"> -->
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2 class="text-white mb-4">About me</h2>
@@ -687,24 +688,27 @@ FROM
               <!-- <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. more text that I can write</p> -->
           </div>
         </div>
-        <!-- <img src="img/ipad.png" class="img-fluid" alt=""> -->
-      </div>
+       <!-- </div> -->
     </section>
 	
 
     <!-- Contact Section ... ctrl Q to comment out or // ... --> 
-    <section id="contact" class="contact-section text-center bg-black">
+    <section id="contact" class="contact-section bg-black">
       <div class="container">
 		<div class="row">
+		<div class="col-md-10 col-lg-8 mx-auto text-center">
 			<div class="small text-white-50">
 				<div class="container">
 				<h1>Contact me</h1>
 				<p>Email: j.cupac@gmail.com</p>
 				</div>
+			</div>
 			</div>		
 		</div>
       </div>
     </section>
+	
+
 
     <!-- Footer -->
     <footer class="bg-black small text-center text-white-50">
