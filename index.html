@@ -17,9 +17,10 @@
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
+	
     <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet"> 
 	
 	<!-- added for blue code -->
 	<link rel="stylesheet" href="https://prismjs.com/themes/prism.css"/>
@@ -63,16 +64,19 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
 
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#projects-qlikview">Power BI</a>
             </li>
-            <li class="nav-item">
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#projects-qlikview">QlikView</a>
+            </li>
+           <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#projects-sql-server">SQL Server</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projects-qlikview">QlikView</a>
+              <a class="nav-link js-scroll-trigger" href="#projects">Business</a>
             </li>
-            <li class="nav-item">
+           <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
             <li class="nav-item">
@@ -83,363 +87,47 @@
       </div>
     </nav>
 
-
 	
 <!-- Header -->
     <header class="masthead">
       <div class="container d-flex h-100 align-items-center">
         <div class="mx-auto text-center">
           <h1 class="mx-auto my-0 ">LuxHotel</h1>
-          <h2 class="text-white-50 mx-auto mt-2 mb-5">Smart Reservation System - BI Solution</h2>
-          <a href="#projects" class="btn btn-primary js-scroll-trigger">Get Started</a>
+          <h2 class="text-melon-50 mx-auto mt-2 mb-5">Smart Reservation System - BI Solution</h2>
+		  <a href="#projects" class="btn btn-primary js-scroll-trigger">Get Started</a>
         </div>
       </div>
     </header>
 
+	
 
-    <!-- Projects Section -->
-      <!-- <div class="container"> MAN THIS CAUSES WEIRD CHANGES-->
-		<!-- <div id="projects" class="projects-section bg-light"> -->
-	<div id="projects" class="projects-section bg-light">
-		<div class="container project-container">
-			<div class="row align-items-center no-gutters mb-4 mb-lg-5">
-			  <div class="col-xl-8 col-lg-7">
+	    <div class="container project-container">
+		<h5 style="font-size:2.5rem;">QLIKVIEW DATA VISUALISATION</h5>
+	</div>
+		<div class="container project-container2">
+				<p>The following dashboard for management reporting was creating in QlikView. It enables the user to filter the data by various dimensions and it shows management summaries through charts as well as reservation listing for hotel management staff:</p>
 				<img class="img-fluid mb-3 mb-lg-0" src="img/dashboard.png" alt="" img style="border:2px solid black">
-			  </div>
-			</div>
-		<!-- </div> -->
-		  
-          <div class="col-xl-4 col-lg-5">
-            <div class="featured-text text-center text-lg-left">
-              <h4>eHotel Smart Reservation System</h4>
-              <p class="text-black-50 mb-0">DASHBOARD</p>
-            </div>
-          </div>
-		</div>  
-    </div>
-
-
-		<!-- font for HEDAING 1 TO BE CHANGED -->
-		<!-- h1 { -->
-			<!-- font-size:50px; -->
-		<!-- } -->
-
-
-	
-    <!-- <section id="projects-sql-server" class="projects-section bg-light"> -->
-	<!-- put id in, and container -->
-      <div class="container project-container">
-	  
-			<h1>BUSINESS CASE</h1>			
-			
-			<p>The eHotel Smart Reservation System provides a solution to the current inefficient reservation system. It maximizes financial profitability and customer satisfaction.</p>			
-			
-			<h3>Profitability</h3>
-			<p>Increased revenue would result from decreased costs as less employees would be needed since reservations would be done directly by the customer. Technology should automate low-level jobs, and employees would be performing monitoring and other value added activities. There would be less administrative work and more time for building relationships with customers. In essence. customer satisfaction and loyalty is key for business success.</p>			
-			<p>In addition, management would be able see trends and patterns reservations. This would optimize the marketing strategy as they would make informed decisions regarding promotions, discounts and variable cost of the rooms.</p>
-			
-			<h3>Customer Satisfaction</h3>
-			<p>The eHotel Smart Reservation System is flexible and accessible 24/7 for customers making reservations. There is no waiting time and it is simple to navigate online. Reduced waiting and time efficiency is linked to cost savings.</p>			
-			<p>The centralized data storage ensures data correctness and validity, as well as providing backup archiving for analysis purposes and influencing marketing strategies. It prevents over/double bookings and manual data errors. </p>
-			<p>Notably, customer satisfaction leads to loyalty, acquisition and retention, which is vital to a business.</p>
-			
-			<h3>Efficiency</h3>
-			<p>The eHotel Smart Reservation System has a user-friendly platform, is intuitive to navigate and easily manageable. It is interactive and displays real-time availability and pricing. Furthermore, security is ensured and all personal information stays private through data encryption processes.</p>			
-	  
-	  </div>
-
-     
-
-
-	
-      <div class="container project-container">
-	  
-			<!-- <h5 style="font-size:2.31rem">REQUIREMENTS</h5> -->
-			<!-- <h5 style="font-size:2.21rem">REQUIREMENTS SPECIFICATIONS</h5> -->
-			<h5 style="font-size:2.5rem">REQUIREMENT SPECIFICATION</h5>
-			<!-- REQUIREMENTS SPECIFICATIONS -->
-			<p>The eHotel chain has multiple hotels. Each hotel has rooms and employees. Rooms have to be reserved in advance. Rooms have variable costs. Customer data and reservation details are stored.</p>					
-			
-			<h3>System Overview</h3>
-			<p>The system is composed of the following modules:</p>
-				<ul style="list-style-type:square">
-					<li>Room Reservation Module – used by customers to make reservations</li>
-					<li>Operations Reporting Module – used by employees to gain detailed insight regarding room reservations to make operations</li>
-					<li>Management Reporting Module – used by managers to get reports from the data warehouse and to be able to make financial, marketing and strategy decisions</li>
-					<li>Predictive Analytics Module – usage of machine learning for predicting future hotel trends</li>
-				</ul>
-
-	  </div>
-	  
-
-
-       <div class="container">
-            <img class="img-fluid" src="img/module.png" alt="" img style="border:2px solid black">
-       </div>	
-
-
-      <div class="container project-container">
-	  
-			<h4>Room Reservation Module</h4>	
-			<p>This module enables users to make reservations. The user selects the date, hotel, room type, length of stay. Date refers to the date of their estimated check-in date. There are different room types – including standard, double, family and suite.</p>			
-
-			<h4>Operations Reporting Module</h4>	
-			<p>This module provides employees visibility into the hotel room reservations. Reservation frequency and volume can be observed, relating to elements such as room type, hotel location. Dynamic factors such as time and room price are also displayed.</p>			
-
-			<h4>Management Reporting Module</h4>	
-			<p>This module provides data reports that show room reservations patterns. This is crucial for managers, as it influences their future business practices and decisions. Information is stored in the data warehouse regarding customer, hotel and room details. </p>			
-
-			<h4>Predictive Analysis Module</h4>	
-			<p>This module reveals hotel room reservations trends through analytics. Predictive models enhance business performance, customer retention and profitability. Room reservations data can be filtered and aggregated by date, hotel, location, room type.</p>			
-	  
-	  </div>
-
-
-
-	<div id="projects-sql-server" class="container project-container">
-		<h5 style="font-size:2.49rem;">ENTITY RELATIONSHIP DIAGRAM (ERD)</h5>
+		</div>
+	<div class="container project-container">
 	</div>
 	
-		<div class="container project-container2">
-			<p>The followinng table shows the entities and relationships for the databse system:</p>
-			<img class="img-fluid mb-3 mb-lg-0" src="img/erd.png" alt="" img style="border:2px solid black">
-        </div>
-			
+	
 	
 
-      <div class="container project-container">
-	  
-			<h1>DATABASE SCHEMA (SQL SERVER)</h1>			
-			<p>The following script was executed in SQL Server to create the database system:</p>
-			<pre class='language-sql'>
-<code>CREATE TABLE Country
-(
-	Id INT PRIMARY KEY IDENTITY (1,1),
-	Code NVARCHAR (10) NOT NULL,
-	Name NVARCHAR (50) NOT NULL
-);
-
-CREATE TABLE Hotel
-(
-	Id INT PRIMARY KEY IDENTITY (1,1),
-	Name NVARCHAR (50) NOT NULL,
-	Address NVARCHAR (200) NOT NULL,
-	PostCode NVARCHAR (10) NOT NULL,
-	City NVARCHAR (50) NOT NULL,
-	CountryId INT FOREIGN KEY REFERENCES Country(Id) NOT NULL,
-	Phone NVARCHAR (10) NOT NULL	
-);
-
-CREATE TABLE Customer
-(
-	Id INT PRIMARY KEY IDENTITY (1,1),
-	FirstName NVARCHAR (50) NOT NULL,
-	LastName NVARCHAR (50) NOT NULL,
-	Address NVARCHAR (200) NOT NULL,
-	City NVARCHAR (50) NOT NULL,
-	PostCode NVARCHAR (10) NOT NULL,
-	DateOfBirth date NOT NULL,
-	Phone NVARCHAR (10) NOT NULL,
-	Email NVARCHAR (50) NOT NULL,
-	IsMale bit NOT NULL
-);
-
-CREATE TABLE RoomType
-(
-	Id INT PRIMARY KEY IDENTITY (1,1),
-	Name NVARCHAR (50) NOT NULL,
-	Description NVARCHAR (250) NOT NULL,
-	RoomPrice money NOT NULL,
-	MaxGuests INT NOT NULL
-);
-
-CREATE TABLE Room
-(
-	Id INT PRIMARY KEY IDENTITY (1,1),
-	RoomNumber INT NOT NULL,
-	HotelId INT FOREIGN KEY REFERENCES Hotel(Id) NOT NULL,
-	RoomTypeId INT FOREIGN KEY REFERENCES RoomType(Id) NOT NULL,--??
-	IsSmoking bit NOT NULL
-);
-
-CREATE TABLE Reservation
-(
-	Id INT PRIMARY KEY IDENTITY (1,1),
-	ReservationDate date NOT NULL,
-	CustomerId INT FOREIGN KEY REFERENCES Customer(Id) NOT NULL,
-	RoomId INT FOREIGN KEY REFERENCES Room(Id) NOT NULL,
-	NumberGuests INT NOT NULL,
-	CheckInDate date NOT NULL,
-	CheckOutDate date NOT NULL
-);</code>
-</pre>
-			
-	  </div>
-
-
-      <!-- <div class="container project-container"> -->
-	  
-			<!-- <h1>DATABASE CRUD OPERATIONS (SQL SERVER)</h1>			 -->
-			<!-- <p>Inserting data, reading data, updating data, deleting data:</p>			 -->
-			
-			<!-- <pre class='language-sql'> -->
-<!-- <code>SET IDENTITY_INSERT [dbo].[Country] ON  -->
-<!-- GO -->
-<!-- INSERT [dbo].[Country] ([Id], [Code], [Name]) VALUES (2, N'GB', N'United Kingdom') -->
-<!-- GO -->
-<!-- INSERT [dbo].[Country] ([Id], [Code], [Name]) VALUES (3, N'US', N'United States') -->
-<!-- GO -->
-<!-- INSERT [dbo].[Country] ([Id], [Code], [Name]) VALUES (4, N'DE', N'Germany') -->
-<!-- GO -->
-<!-- INSERT [dbo].[Country] ([Id], [Code], [Name]) VALUES (5, N'IT', N'Italy') -->
-<!-- GO -->
-<!-- SET IDENTITY_INSERT [dbo].[Country] OFF -->
-<!-- GO -->
-<!-- SET IDENTITY_INSERT [dbo].[Hotel] ON  -->
-<!-- GO -->
-<!-- INSERT [dbo].[Hotel] ([Id], [Name], [Address], [PostCode], [City], [CountryId], [Phone]) VALUES (7, N'Grand Hotel London', N'Ariel Way, White City', N'W12 7GF', N'London', 2, N'203371200') -->
-<!-- GO -->
-<!-- INSERT [dbo].[Hotel] ([Id], [Name], [Address], [PostCode], [City], [CountryId], [Phone]) VALUES (8, N'Grand Hotel New York', N'100 West 33rd Street', N'10001', N'New York', 3, N'224650500') -->
-<!-- GO -->
-<!-- INSERT [dbo].[Hotel] ([Id], [Name], [Address], [PostCode], [City], [CountryId], [Phone]) VALUES (11, N'Grand Hotel Berlin', N'Grunerstraße 20', N'10179', N'Berlin', 4, N'302693421') -->
-<!-- GO -->
-<!-- INSERT [dbo].[Hotel] ([Id], [Name], [Address], [PostCode], [City], [CountryId], [Phone]) VALUES (12, N'Grand Hotel Rome', N'Via Giovanni Giolitti, 18', N'185', N'Roma', 5, N'669190769') -->
-<!-- GO -->
-<!-- SET IDENTITY_INSERT [dbo].[Hotel] OFF -->
-			<!-- </pre> -->
-			<!-- </code> -->
-	  
-	  <!-- </div> -->
-
-		
-      <div class="container project-container">
-	  
-			<h1>DATABASE DATA ANALYSIS & REPORTING (SQL SERVER)</h1>			
-			<h4>Reservation Listing</h4>
-			<p>The following query provides details regarding all reservations that have been created:</p>
-			
-			<pre class='language-sql'>
-<code>SELECT RR.ReservationDate, C.FirstName, C.LastName, R.RoomNumber, RR.NumberGuests, RR.CheckInDate, RR.CheckOutDate, H.Name HotelName
-FROM Reservation RR
-LEFT JOIN Customer C ON RR.CustomerId = C.Id
-LEFT JOIN Room R ON RR.RoomId = R.Id
-LEFT JOIN Hotel H ON R.HotelId = H.Id;</code>
-</pre>
-			
-
-			<div class="container project-container">
-			</div>
-			
-			<h4>Reservation Listing for a specified time range</h4>
-			<p>The following query provides details regarding all reservations that have been created in the time range between 02.05.2018 – 10.05.2018:</p>
-			
-			<pre class='language-sql'>
-<code>SELECT RR.ReservationDate, C.FirstName, C.LastName, R.RoomNumber, RR.NumberGuests, RR.CheckInDate, RR.CheckOutDate, H.Name HotelName
-FROM Reservation RR
-LEFT JOIN Customer C ON RR.CustomerId = C.Id
-LEFT JOIN Room R ON RR.RoomId = R.Id
-LEFT JOIN Hotel H ON R.HotelId = H.Id
-WHERE RR.ReservationDate BETWEEN '2018-05-02' AND '2018-05-10'
-ORDER BY RR.ReservationDate ASC;</pre>
-			</code>
-			
-			
-			<div class="container project-container">
-			</div>
-			
-			<h4>Reservation Listing for a specific time range and specific hotel</h4>
-			<p>The following query provides details regarding all reservations that have been created in the time range between 02.05.2018 – 10.05.2018 for Grand Hotel London:</p>
-			
-			<pre class='language-sql'>
-<code>SELECT RR.ReservationDate, C.FirstName, C.LastName, R.RoomNumber, RR.NumberGuests, RR.CheckInDate, RR.CheckOutDate, H.Name HotelName
-FROM Reservation RR
-LEFT JOIN Customer C ON RR.CustomerId = C.Id
-LEFT JOIN Room R ON RR.RoomId = R.Id
-LEFT JOIN Hotel H ON R.HotelId = H.Id
-WHERE RR.ReservationDate BETWEEN '2018-05-02' AND '2018-05-10'
-AND H.Id = 7 
-ORDER BY RR.ReservationDate ASC, C.FirstName ASC, C.LastName ASC;</code>
-</pre>
-			
-
-			<div class="container project-container">
-			</div>
-			
-			<h4>Total Count Hotels</h4>
-			<p>The following query shows the total number of hotels:</p>
-			
-			<pre class='language-sql'>
-<code>SELECT COUNT(*) TotalCountHotels
-FROM Hotel;</code>
-</pre>
-
-
-			<div class="container project-container">
-			</div>
-			
-			<h4>Total Reservations per day for a specific hotel in a specific timerange</h4>
-			<p>The following query provides details regarding total number of reservations that have been created in the time range between 02.05.2018 – 10.05.2018, on a daily basis, for Grand Hotel London:</p>
-			
-			<pre class='language-sql'>
-<code>SELECT RR.ReservationDate, COUNT(*) TotalReservations
-FROM Reservation RR
-LEFT JOIN Customer C ON RR.CustomerId = C.Id
-LEFT JOIN Room R ON RR.RoomId = R.Id
-LEFT JOIN Hotel H ON R.HotelId = H.Id
-WHERE RR.ReservationDate BETWEEN '2018-05-02' AND '2018-05-10'
-AND H.Id = 7
-GROUP BY RR.ReservationDate
-ORDER BY RR.ReservationDate ASC;</pre>
-			</code>
+	<div class="container project-container">
+		<h1>QLIKVIEW DATA MODEL</h1>
+	</div>
+		<div class="container project-container2">
+			<p>The following is the data model within QlikView:</p>
+			<img class="img-fluid mb-3 mb-lg-0" src="img/datamodel.png" alt="" img style="border:2px solid black">
+			<!-- <img class="img-fluid mb-3 mb-lg-0" src="img/dashboard.png" alt="" img style="border:2px solid black"> -->
+		</div>
 
 			
-			<div class="container project-container">
-			</div>
-			
-			<h4>Number of reservations by Reservation Date, by Customer (from a business perspective, Daily Reservations by Customer)</h4>
-			<p>The following query provides details from a business perspective, regarding Daily Reservations by Customer in the time range between 01.05.2018 – 20.5.2018, for Grand Hotel London:</p>
-			
-			<pre class='language-sql'>
-<code>SELECT RR.ReservationDate, C.FirstName, C.LastName, COUNT(*) TotalReservations
-FROM Reservation RR
-LEFT JOIN Customer C ON RR.CustomerId = C.Id
-LEFT JOIN Room R ON RR.RoomId = R.Id
-LEFT JOIN Hotel H ON R.HotelId = H.Id
-WHERE RR.ReservationDate BETWEEN '2018-05-01' AND '2018-05-20'
-AND H.Id = 7
-GROUP BY RR.ReservationDate, C.FirstName, C.LastName 
-ORDER BY RR.ReservationDate ASC, C.FirstName ASC, C.LastName ASC;</code>
-</pre>
-
-			
-			<div class="container project-container">
-			</div>
-			
-			<h4>Number of reservations by Reservation Date, by Customer for a specific range for number of reservations</h4>
-			<p>The following query provides details regarding the Customers who made more than one reservation and less than five reservations, in the time range between 01.05.2018 – 20.05.2018, for Grand Hotel London:</p>
-			
-			<pre class='language-sql'>
-<code>SELECT RR.ReservationDate, C.FirstName, C.LastName, COUNT(*) TotalReservations
-FROM Reservation RR
-LEFT JOIN Customer C ON RR.CustomerId = C.Id
-LEFT JOIN Room R ON RR.RoomId = R.Id
-LEFT JOIN Hotel H ON R.HotelId = H.Id
-WHERE RR.ReservationDate BETWEEN '2018-05-01' AND '2018-05-20'
-AND H.Id = 7
-GROUP BY RR.ReservationDate, C.FirstName, C.LastName 
-HAVING COUNT(*) > 1 AND COUNT(*) < 5
-ORDER BY RR.ReservationDate ASC, C.FirstName ASC, C.LastName ASC;</code>
-</pre>
-			
-		
-	  </div>
-
 
 
       <div id="projects-qlikview" class="container project-container">
-	  
 			<h1>QLIKVIEW LOAD SCRIPT</h1>			
-
 <p>Connecting to the database in SQL Server:</p>
 <pre class='language-sql'>
 <code>OLEDB CONNECT TO [Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=HotelDb;Data Source=JECA-THINK;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=JECA-THINK;Use Encryption for Data=False;Tag with column collation when possible=False];</code>
@@ -588,42 +276,229 @@ FROM
 	  </div>
 
 
-	<div class="container project-container">
-		<h1>QLIKVIEW DATA MODEL</h1>
-	</div>
+
+
 		
+
+
+
+
+     
+
+
+	<div id="projects-sql-server" class="container project-container">
+		<h5 style="font-size:2.49rem;">ENTITY RELATIONSHIP DIAGRAM (ERD)</h5>
+	</div>
 		<div class="container project-container2">
-			<p>The following is the data model within QlikView:</p>
-			<img class="img-fluid mb-3 mb-lg-0" src="img/datamodel.png" alt="" img style="border:2px solid black">
-			<!-- <img class="img-fluid mb-3 mb-lg-0" src="img/dashboard.png" alt="" img style="border:2px solid black"> -->
-		</div>
-
-			<!-- <div class="container project-container2"> -->
-			<!-- <h4>- - - SNOWFLAKE SCHEMA (eHotel Smart Reservation System)</h4> -->
+			<p>The followinng table shows the entities and relationships for the databse system:</p>
+			<img class="img-fluid mb-3 mb-lg-0" src="img/erd.png" alt="" img style="border:2px solid black">
+        </div>
 			
-			<!-- <ul style="list-style-type:square"> -->
-			<!-- <li>Fact Table: Reservation</li> -->
-			<!-- <li>Dimensions: Customer, Country, Room, RoomType, Hotel</li> -->
-			<!-- </ul> -->
-			<!-- </div> -->
-			
-
-		
-    <div class="container project-container">
-		<!-- <h5 style="font-size:2.5rem;">QLIKVIEW DATA</h5> -->
-		<!-- <h5 style="font-size:2.16rem;">VISUALISATIONS</h5> -->
-		<h5 style="font-size:2.5rem;">QLIKVIEW DATA VISUALISATION</h5>
-		<!-- QLIKVIEW DATA VISUALISATIONS -->
-	</div>
 	
-		<div class="container project-container2">
-				<p>The following dashboard for management reporting was creating in QlikView. It enables the user to filter the data by various dimensions and it shows management summaries through charts as well as reservation listing for hotel management staff:</p>
-				<img class="img-fluid mb-3 mb-lg-0" src="img/dashboard.png" alt="" img style="border:2px solid black">
-				<!-- <img class="img-fluid mb-3 mb-lg-0" src="img/datamodel.png" alt="" img style="border:2px solid black"> -->
-		</div>
 
-	<div class="container project-container">
-	</div>
+      <div class="container project-container">
+			<h1>DATABASE SCHEMA (SQL SERVER)</h1>			
+			<p>The following script was executed in SQL Server to create the database system:</p>
+			<pre class='language-sql'>
+<code>CREATE TABLE Country
+(
+	Id INT PRIMARY KEY IDENTITY (1,1),
+	Code NVARCHAR (10) NOT NULL,
+	Name NVARCHAR (50) NOT NULL
+);
+
+CREATE TABLE Hotel
+(
+	Id INT PRIMARY KEY IDENTITY (1,1),
+	Name NVARCHAR (50) NOT NULL,
+	Address NVARCHAR (200) NOT NULL,
+	PostCode NVARCHAR (10) NOT NULL,
+	City NVARCHAR (50) NOT NULL,
+	CountryId INT FOREIGN KEY REFERENCES Country(Id) NOT NULL,
+	Phone NVARCHAR (10) NOT NULL	
+);
+
+CREATE TABLE Customer
+(
+	Id INT PRIMARY KEY IDENTITY (1,1),
+	FirstName NVARCHAR (50) NOT NULL,
+	LastName NVARCHAR (50) NOT NULL,
+	Address NVARCHAR (200) NOT NULL,
+	City NVARCHAR (50) NOT NULL,
+	PostCode NVARCHAR (10) NOT NULL,
+	DateOfBirth date NOT NULL,
+	Phone NVARCHAR (10) NOT NULL,
+	Email NVARCHAR (50) NOT NULL,
+	IsMale bit NOT NULL
+);
+
+CREATE TABLE RoomType
+(
+	Id INT PRIMARY KEY IDENTITY (1,1),
+	Name NVARCHAR (50) NOT NULL,
+	Description NVARCHAR (250) NOT NULL,
+	RoomPrice money NOT NULL,
+	MaxGuests INT NOT NULL
+);
+
+CREATE TABLE Room
+(
+	Id INT PRIMARY KEY IDENTITY (1,1),
+	RoomNumber INT NOT NULL,
+	HotelId INT FOREIGN KEY REFERENCES Hotel(Id) NOT NULL,
+	RoomTypeId INT FOREIGN KEY REFERENCES RoomType(Id) NOT NULL,--??
+	IsSmoking bit NOT NULL
+);
+
+CREATE TABLE Reservation
+(
+	Id INT PRIMARY KEY IDENTITY (1,1),
+	ReservationDate date NOT NULL,
+	CustomerId INT FOREIGN KEY REFERENCES Customer(Id) NOT NULL,
+	RoomId INT FOREIGN KEY REFERENCES Room(Id) NOT NULL,
+	NumberGuests INT NOT NULL,
+	CheckInDate date NOT NULL,
+	CheckOutDate date NOT NULL
+);</code>
+</pre>
+			
+	  </div>
+		
+      <div class="container project-container">
+	  
+			<h1>DATABASE DATA ANALYSIS & REPORTING (SQL SERVER)</h1>			
+			<h4>Reservation Listing</h4>
+			<p>The following query provides details regarding all reservations that have been created:</p>
+			
+			<pre class='language-sql'>
+<code>SELECT RR.ReservationDate, C.FirstName, C.LastName, R.RoomNumber, RR.NumberGuests, RR.CheckInDate, RR.CheckOutDate, H.Name HotelName
+FROM Reservation RR
+LEFT JOIN Customer C ON RR.CustomerId = C.Id
+LEFT JOIN Room R ON RR.RoomId = R.Id
+LEFT JOIN Hotel H ON R.HotelId = H.Id;</code>
+</pre>
+			
+
+			<div class="container project-container">
+			</div>
+			
+			<h4>Reservation Listing for a specified time range</h4>
+			<p>The following query provides details regarding all reservations that have been created in the time range between 02.05.2018 – 10.05.2018:</p>
+			
+			<pre class='language-sql'>
+<code>SELECT RR.ReservationDate, C.FirstName, C.LastName, R.RoomNumber, RR.NumberGuests, RR.CheckInDate, RR.CheckOutDate, H.Name HotelName
+FROM Reservation RR
+LEFT JOIN Customer C ON RR.CustomerId = C.Id
+LEFT JOIN Room R ON RR.RoomId = R.Id
+LEFT JOIN Hotel H ON R.HotelId = H.Id
+WHERE RR.ReservationDate BETWEEN '2018-05-02' AND '2018-05-10'
+ORDER BY RR.ReservationDate ASC;</pre>
+			</code>
+			
+			
+			<div class="container project-container">
+			</div>
+			<h4>Reservation Listing for a specific time range and specific hotel</h4>
+			<p>The following query provides details regarding all reservations that have been created in the time range between 02.05.2018 – 10.05.2018 for Grand Hotel London:</p>
+			<pre class='language-sql'>
+<code>SELECT RR.ReservationDate, C.FirstName, C.LastName, R.RoomNumber, RR.NumberGuests, RR.CheckInDate, RR.CheckOutDate, H.Name HotelName
+FROM Reservation RR
+LEFT JOIN Customer C ON RR.CustomerId = C.Id
+LEFT JOIN Room R ON RR.RoomId = R.Id
+LEFT JOIN Hotel H ON R.HotelId = H.Id
+WHERE RR.ReservationDate BETWEEN '2018-05-02' AND '2018-05-10'
+AND H.Id = 7 
+ORDER BY RR.ReservationDate ASC, C.FirstName ASC, C.LastName ASC;</code>
+</pre>
+			
+
+			<div class="container project-container">
+			</div>
+			<h4>Total Count Hotels</h4>
+			<p>The following query shows the total number of hotels:</p>
+			
+			<pre class='language-sql'>
+<code>SELECT COUNT(*) TotalCountHotels
+FROM Hotel;</code>
+</pre>
+
+
+			<div class="container project-container">
+			</div>
+			<h4>Total Reservations per day for a specific hotel in a specific timerange</h4>
+			<p>The following query provides details regarding total number of reservations that have been created in the time range between 02.05.2018 – 10.05.2018, on a daily basis, for Grand Hotel London:</p>
+			<pre class='language-sql'>
+<code>SELECT RR.ReservationDate, COUNT(*) TotalReservations
+FROM Reservation RR
+LEFT JOIN Customer C ON RR.CustomerId = C.Id
+LEFT JOIN Room R ON RR.RoomId = R.Id
+LEFT JOIN Hotel H ON R.HotelId = H.Id
+WHERE RR.ReservationDate BETWEEN '2018-05-02' AND '2018-05-10'
+AND H.Id = 7
+GROUP BY RR.ReservationDate
+ORDER BY RR.ReservationDate ASC;</pre>
+			</code>
+
+			
+			<div class="container project-container">
+			</div>
+			<h4>Number of reservations by Reservation Date, by Customer (from a business perspective, Daily Reservations by Customer)</h4>
+			<p>The following query provides details from a business perspective, regarding Daily Reservations by Customer in the time range between 01.05.2018 – 20.5.2018, for Grand Hotel London:</p>
+			<pre class='language-sql'>
+<code>SELECT RR.ReservationDate, C.FirstName, C.LastName, COUNT(*) TotalReservations
+FROM Reservation RR
+LEFT JOIN Customer C ON RR.CustomerId = C.Id
+LEFT JOIN Room R ON RR.RoomId = R.Id
+LEFT JOIN Hotel H ON R.HotelId = H.Id
+WHERE RR.ReservationDate BETWEEN '2018-05-01' AND '2018-05-20'
+AND H.Id = 7
+GROUP BY RR.ReservationDate, C.FirstName, C.LastName 
+ORDER BY RR.ReservationDate ASC, C.FirstName ASC, C.LastName ASC;</code>
+</pre>
+
+			
+			<div class="container project-container">
+			</div>
+			<h4>Number of reservations by Reservation Date, by Customer for a specific range for number of reservations</h4>
+			<p>The following query provides details regarding the Customers who made more than one reservation and less than five reservations, in the time range between 01.05.2018 – 20.05.2018, for Grand Hotel London:</p>
+			<pre class='language-sql'>
+<code>SELECT RR.ReservationDate, C.FirstName, C.LastName, COUNT(*) TotalReservations
+FROM Reservation RR
+LEFT JOIN Customer C ON RR.CustomerId = C.Id
+LEFT JOIN Room R ON RR.RoomId = R.Id
+LEFT JOIN Hotel H ON R.HotelId = H.Id
+WHERE RR.ReservationDate BETWEEN '2018-05-01' AND '2018-05-20'
+AND H.Id = 7
+GROUP BY RR.ReservationDate, C.FirstName, C.LastName 
+HAVING COUNT(*) > 1 AND COUNT(*) < 5
+ORDER BY RR.ReservationDate ASC, C.FirstName ASC, C.LastName ASC;</code>
+</pre>
+	  </div>
+
+	
+	
+	
+      <div class="container project-container">
+	  
+			<h1>BUSINESS CASE</h1>			
+			
+			<p>The LuxHotel Smart Reservation System provides a solution to the current inefficient reservation system. It maximizes financial profitability and customer satisfaction.</p>			
+			
+			<h3>Profitability</h3>
+			<p>Increased revenue would result from decreased costs as less employees would be needed since reservations would be done directly by the customer. Technology should automate low-level jobs, and employees would be performing monitoring and other value added activities. There would be less administrative work and more time for building relationships with customers. In essence. customer satisfaction and loyalty is key for business success.</p>			
+			<p>In addition, management would be able see trends and patterns reservations. This would optimize the marketing strategy as they would make informed decisions regarding promotions, discounts and variable cost of the rooms.</p>
+			
+			<h3>Customer Satisfaction</h3>
+			<p>The LuxHotel Smart Reservation System is flexible and accessible 24/7 for customers making reservations. There is no waiting time and it is simple to navigate online. Reduced waiting and time efficiency is linked to cost savings.</p>			
+			<p>The centralized data storage ensures data correctness and validity, as well as providing backup archiving for analysis purposes and influencing marketing strategies. It prevents over/double bookings and manual data errors. </p>
+			<p>Notably, customer satisfaction leads to loyalty, acquisition and retention, which is vital to a business.</p>
+			
+			<h3>Efficiency</h3>
+			<p>The LuxHotel Smart Reservation System has a user-friendly platform, is intuitive to navigate and easily manageable. It is interactive and displays real-time availability and pricing. Furthermore, security is ensured and all personal information stays private through data encryption processes.</p>			
+	  
+	  </div>
+	
+
 	
     <!-- About Section -->
     <section id="about" class="about-section text-center">
@@ -631,7 +506,7 @@ FROM
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2 class="text-white mb-4">About me</h2>
-            <p class="text-white-50">Graduated with a Bachelor of Design in Architecture from the University of Sydney. Interested in Database Systems and Business Intelligence. Self-taught in ERD, SQL, SQL Server, and QlikView. Developed a database system for a hotel chain, designing the database in SQL Server and implementing data visualizations in QlikView. Aspiring to work as a BI Developer because it would enable me to consolidate, analyze and visualize data to support clients in business decisions. </p>
+            <p class="text-white-50">Graduated with a Bachelor of Design in Architecture from the University of Sydney. Interested in Database Systems and Business Intelligence. Self-taught in SQL, SQL Server, and BI Tools (Power BI, QlikView). Developed a database system for a hotel chain, designing the database in SQL Server and implementing data visualizations in QlikView. Aspiring to work as a BI Developer because it would enable me to consolidate, analyze and visualize data to support clients in business decisions. </p>
               <!-- <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. more text that I can write</p> -->
           </div>
         </div>
@@ -663,14 +538,11 @@ FROM
         Copyright &copy; Jelena Cupać 2018
       </div>
     </footer>
-
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
 
