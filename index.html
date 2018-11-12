@@ -65,7 +65,7 @@
           <ul class="navbar-nav ml-auto">
 
              <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projects-qlikview">Power BI</a>
+              <a class="nav-link js-scroll-trigger" href="#projects-power-bi">Power BI</a>
             </li>
 			<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#projects-qlikview">QlikView</a>
@@ -73,9 +73,9 @@
            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#projects-sql-server">SQL Server</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projects">Business</a>
-            </li>
+            <!-- <li class="nav-item"> -->
+              <!-- <a class="nav-link js-scroll-trigger" href="#projects">Business</a> -->
+            <!-- </li> -->
            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
@@ -88,6 +88,7 @@
     </nav>
 
 	
+	
 <!-- Header -->
     <header class="masthead">
       <div class="container d-flex h-100 align-items-center">
@@ -99,8 +100,56 @@
       </div>
     </header>
 
-	
 
+	
+    <div id="projects-power-bi" class="container project-container">
+	
+		    <div class="container project-container">
+		<h5 style="font-size:2.5rem;">POWER BI: DASHBOARD</h5>
+	</div>
+		<div class="container project-container2">
+				<p>The following dashboard for management reporting was published to Power BI Service:</p>
+				<img class="img-fluid mb-3 mb-lg-0" src="img/power_bi_dashboard_services.png" alt="" img style="border:2px solid black">
+		</div>
+	<div class="container project-container">
+	</div>
+	
+	
+	
+		<div class="container project-container">
+			<h5 style="font-size:2.5rem;">POWER BI: REPORTS</h5>
+		</div>
+		
+		<div class="container project-container2">
+				<p>The following reports - Revenue Overview and Reservations Analysis - were created in Power BI Desktop:</p>
+				<img class="img-fluid mb-3 mb-lg-0" src="img/power_bi_report_revenue.png" alt="" img style="border:2px solid black">
+		</div>
+	
+	
+		<div class="container project-container2">
+				<!-- <p>The following dashboard for management reporting was creating in QlikView. It enables the user to filter the data by various dimensions and it shows management summaries through charts as well as reservation listing for hotel management staff:</p> -->
+				<img class="img-fluid mb-3 mb-lg-0" src="img/power_bi_report_reservations.png" alt="" img style="border:2px solid black">
+		</div>
+	<div class="container project-container">
+	</div>	
+ 
+	
+	<div class="container project-container">
+		<h1>POWER BI DATA MODEL</h1>
+	</div>
+		<div class="container project-container2">
+			<p>The following is the data model within Power BI:</p>
+			<img class="img-fluid mb-3 mb-lg-0" src="img/power_bi_data_model.png" alt="" img style="border:2px solid black">
+			<!-- <img class="img-fluid mb-3 mb-lg-0" src="img/dashboard.png" alt="" img style="border:2px solid black"> -->
+		</div>
+	
+	</div>
+
+
+	
+	
+   <div id="projects-qlikview" class="container project-container">	
+	
 	    <div class="container project-container">
 		<h5 style="font-size:2.5rem;">QLIKVIEW DATA VISUALISATION</h5>
 	</div>
@@ -126,154 +175,153 @@
 			
 
 
-      <div id="projects-qlikview" class="container project-container">
-			<h1>QLIKVIEW LOAD SCRIPT</h1>			
-<p>Connecting to the database in SQL Server:</p>
-<pre class='language-sql'>
-<code>OLEDB CONNECT TO [Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=HotelDb;Data Source=JECA-THINK;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=JECA-THINK;Use Encryption for Data=False;Tag with column collation when possible=False];</code>
-</pre>
+ 			<!-- <h1>QLIKVIEW LOAD SCRIPT</h1>			 -->
+<!-- <p>Connecting to the database in SQL Server:</p> -->
+<!-- <pre class='language-sql'> -->
+<!-- <code>OLEDB CONNECT TO [Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=HotelDb;Data Source=JECA-THINK;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=JECA-THINK;Use Encryption for Data=False;Tag with column collation when possible=False];</code> -->
+<!-- </pre> -->
 
 
-<p>Loading SQL Server Database Tables:</p>
-<pre class='language-sql'>
-<code>QUALIFY *;
+<!-- <p>Loading SQL Server Database Tables:</p> -->
+<!-- <pre class='language-sql'> -->
+<!-- <code>QUALIFY *; -->
 
-UNQUALIFY Hotel.Id, Customer.Id, Room.Id, RoomType.Id, Hotel.Id, Country.Id;
+<!-- UNQUALIFY Hotel.Id, Customer.Id, Room.Id, RoomType.Id, Hotel.Id, Country.Id; -->
 
-LOAD Id,
-    ReservationDate as Date,
-    CustomerId as Customer.Id,
-    RoomId as Room.Id,
-    NumberGuests,
-    CheckInDate,
-    CheckOutDate;
-SQL SELECT *
-FROM HotelDb.dbo.Reservation;
+<!-- LOAD Id, -->
+    <!-- ReservationDate as Date, -->
+    <!-- CustomerId as Customer.Id, -->
+    <!-- RoomId as Room.Id, -->
+    <!-- NumberGuests, -->
+    <!-- CheckInDate, -->
+    <!-- CheckOutDate; -->
+<!-- SQL SELECT * -->
+<!-- FROM HotelDb.dbo.Reservation; -->
 
-STORE Reservation INTO [C:\Users\Jeca\Documents\qvd\Reservation.qvd];
+<!-- STORE Reservation INTO [C:\Users\Jeca\Documents\qvd\Reservation.qvd]; -->
 
-LOAD Id,
-    Name,
-    Address,
-    PostCode,
-    City,
-    CountryId as Country.Id,
-    Phone;
-SQL SELECT *
-FROM HotelDb.dbo.Hotel;
+<!-- LOAD Id, -->
+    <!-- Name, -->
+    <!-- Address, -->
+    <!-- PostCode, -->
+    <!-- City, -->
+    <!-- CountryId as Country.Id, -->
+    <!-- Phone; -->
+<!-- SQL SELECT * -->
+<!-- FROM HotelDb.dbo.Hotel; -->
 
-STORE Hotel INTO [C:\Users\Jeca\Documents\qvd\Hotel.qvd];
+<!-- STORE Hotel INTO [C:\Users\Jeca\Documents\qvd\Hotel.qvd]; -->
 
-LOAD Id,
-    Code,
-    Name;
-SQL SELECT *
-FROM HotelDb.dbo.Country;
+<!-- LOAD Id, -->
+    <!-- Code, -->
+    <!-- Name; -->
+<!-- SQL SELECT * -->
+<!-- FROM HotelDb.dbo.Country; -->
 
-STORE Country INTO [C:\Users\Jeca\Documents\qvd\Country.qvd];
+<!-- STORE Country INTO [C:\Users\Jeca\Documents\qvd\Country.qvd]; -->
 
-LOAD Id,
-    FirstName,
-    LastName,
-    Address,
-    City,
-    PostCode,
-    DateOfBirth,
-    Phone,
-    Email,
-    IsMale;
-SQL SELECT *
-FROM HotelDb.dbo.Customer;
+<!-- LOAD Id, -->
+    <!-- FirstName, -->
+    <!-- LastName, -->
+    <!-- Address, -->
+    <!-- City, -->
+    <!-- PostCode, -->
+    <!-- DateOfBirth, -->
+    <!-- Phone, -->
+    <!-- Email, -->
+    <!-- IsMale; -->
+<!-- SQL SELECT * -->
+<!-- FROM HotelDb.dbo.Customer; -->
 
-STORE Customer INTO [C:\Users\Jeca\Documents\qvd\Customer.qvd];
+<!-- STORE Customer INTO [C:\Users\Jeca\Documents\qvd\Customer.qvd]; -->
 
-Room:
-LOAD Id,
-    RoomNumber as Number,
-    HotelId as Hotel.Id,
-    RoomTypeId as RoomType.Id,
-    IsSmoking;
-SQL SELECT *
-FROM HotelDb.dbo.Room;
+<!-- Room: -->
+<!-- LOAD Id, -->
+    <!-- RoomNumber as Number, -->
+    <!-- HotelId as Hotel.Id, -->
+    <!-- RoomTypeId as RoomType.Id, -->
+    <!-- IsSmoking; -->
+<!-- SQL SELECT * -->
+<!-- FROM HotelDb.dbo.Room; -->
 
-STORE Room INTO [C:\Users\Jeca\Documents\qvd\Room.qvd];
+<!-- STORE Room INTO [C:\Users\Jeca\Documents\qvd\Room.qvd]; -->
 
-LOAD Id,
-    Name,
-    Description,
-    RoomPrice as Price,
-    MaxGuests;
-SQL SELECT *
-FROM HotelDb.dbo.RoomType;
+<!-- LOAD Id, -->
+    <!-- Name, -->
+    <!-- Description, -->
+    <!-- RoomPrice as Price, -->
+    <!-- MaxGuests; -->
+<!-- SQL SELECT * -->
+<!-- FROM HotelDb.dbo.RoomType; -->
 
-STORE RoomType INTO [C:\Users\Jeca\Documents\qvd\RoomType.qvd];</code>
-</pre>
+<!-- STORE RoomType INTO [C:\Users\Jeca\Documents\qvd\RoomType.qvd];</code> -->
+<!-- </pre> -->
 
-<p>Loading qvd Table Files:</p>
-<pre class='language-sql'>
-<code>LOAD Country.Id, 
-     Country.Code, 
-     Country.Name
-FROM
-[C:\Users\Jeca\Documents\qvd\Country.qvd]
-(qvd);
+<!-- <p>Loading qvd Table Files:</p> -->
+<!-- <pre class='language-sql'> -->
+<!-- <code>LOAD Country.Id,  -->
+     <!-- Country.Code,  -->
+     <!-- Country.Name -->
+<!-- FROM -->
+<!-- [C:\Users\Jeca\Documents\qvd\Country.qvd] -->
+<!-- (qvd); -->
 
-LOAD Customer.Id, 
-     Customer.FirstName, 
-     Customer.LastName, 
-     Customer.Address, 
-     Customer.City, 
-     Customer.PostCode, 
-     Customer.DateOfBirth, 
-     Customer.Phone, 
-     Customer.Email, 
-     Customer.IsMale
-FROM
-[C:\Users\Jeca\Documents\qvd\Customer.qvd]
-(qvd);
+<!-- LOAD Customer.Id,  -->
+     <!-- Customer.FirstName,  -->
+     <!-- Customer.LastName,  -->
+     <!-- Customer.Address,  -->
+     <!-- Customer.City,  -->
+     <!-- Customer.PostCode,  -->
+     <!-- Customer.DateOfBirth,  -->
+     <!-- Customer.Phone,  -->
+     <!-- Customer.Email,  -->
+     <!-- Customer.IsMale -->
+<!-- FROM -->
+<!-- [C:\Users\Jeca\Documents\qvd\Customer.qvd] -->
+<!-- (qvd); -->
 
-LOAD Hotel.Id, 
-     Hotel.Name, 
-     Hotel.Address, 
-     Hotel.PostCode, 
-     Hotel.City, 
-     Country.Id, 
-     Hotel.Phone
-FROM
-[C:\Users\Jeca\Documents\qvd\Hotel.qvd]
-(qvd);
+<!-- LOAD Hotel.Id,  -->
+     <!-- Hotel.Name,  -->
+     <!-- Hotel.Address,  -->
+     <!-- Hotel.PostCode,  -->
+     <!-- Hotel.City,  -->
+     <!-- Country.Id,  -->
+     <!-- Hotel.Phone -->
+<!-- FROM -->
+<!-- [C:\Users\Jeca\Documents\qvd\Hotel.qvd] -->
+<!-- (qvd); -->
 
-LOAD Reservation.Id, 
-     Reservation.Date, 
-     Customer.Id, 
-     Room.Id, 
-     Reservation.NumberGuests, 
-     Reservation.CheckInDate, 
-     Reservation.CheckOutDate
-FROM
-[C:\Users\Jeca\Documents\qvd\Reservation.qvd]
-(qvd);
+<!-- LOAD Reservation.Id,  -->
+     <!-- Reservation.Date,  -->
+     <!-- Customer.Id,  -->
+     <!-- Room.Id,  -->
+     <!-- Reservation.NumberGuests,  -->
+     <!-- Reservation.CheckInDate,  -->
+     <!-- Reservation.CheckOutDate -->
+<!-- FROM -->
+<!-- [C:\Users\Jeca\Documents\qvd\Reservation.qvd] -->
+<!-- (qvd); -->
 
-LOAD Room.Id, 
-     Room.Number, 
-     Hotel.Id, 
-     RoomType.Id, 
-     Room.IsSmoking
-FROM
-[C:\Users\Jeca\Documents\qvd\Room.qvd]
-(qvd);
+<!-- LOAD Room.Id,  -->
+     <!-- Room.Number,  -->
+     <!-- Hotel.Id,  -->
+     <!-- RoomType.Id,  -->
+     <!-- Room.IsSmoking -->
+<!-- FROM -->
+<!-- [C:\Users\Jeca\Documents\qvd\Room.qvd] -->
+<!-- (qvd); -->
 
-LOAD RoomType.Id, 
-     RoomType.Name, 
-     RoomType.Description, 
-     RoomType.Price, 
-     RoomType.MaxGuests
-FROM
-[C:\Users\Jeca\Documents\qvd\RoomType.qvd]
-(qvd);</code>
-</pre>
+<!-- LOAD RoomType.Id,  -->
+     <!-- RoomType.Name,  -->
+     <!-- RoomType.Description,  -->
+     <!-- RoomType.Price,  -->
+     <!-- RoomType.MaxGuests -->
+<!-- FROM -->
+<!-- [C:\Users\Jeca\Documents\qvd\RoomType.qvd] -->
+<!-- (qvd);</code> -->
+<!-- </pre> -->
 	  
-	  </div>
+	  <!-- </div> -->
 
 
 
@@ -284,83 +332,83 @@ FROM
 
 
      
-
+<div>
 
 	<div id="projects-sql-server" class="container project-container">
-		<h5 style="font-size:2.49rem;">ENTITY RELATIONSHIP DIAGRAM (ERD)</h5>
+		<h5 style="font-size:2.49rem;">SQL SERVER: ENTITY RELATIONSHIP DIAGRAM (ERD)</h5>
 	</div>
 		<div class="container project-container2">
-			<p>The followinng table shows the entities and relationships for the databse system:</p>
+			<p>The following table shows the entities and relationships for the databse system:</p>
 			<img class="img-fluid mb-3 mb-lg-0" src="img/erd.png" alt="" img style="border:2px solid black">
         </div>
 			
 	
 
-      <div class="container project-container">
-			<h1>DATABASE SCHEMA (SQL SERVER)</h1>			
-			<p>The following script was executed in SQL Server to create the database system:</p>
-			<pre class='language-sql'>
-<code>CREATE TABLE Country
-(
-	Id INT PRIMARY KEY IDENTITY (1,1),
-	Code NVARCHAR (10) NOT NULL,
-	Name NVARCHAR (50) NOT NULL
-);
+      <!-- <div class="container project-container"> -->
+			<!-- <h1>DATABASE SCHEMA (SQL SERVER)</h1>			 -->
+			<!-- <p>The following script was executed in SQL Server to create the database system:</p> -->
+			<!-- <pre class='language-sql'> -->
+<!-- <code>CREATE TABLE Country -->
+<!-- ( -->
+	<!-- Id INT PRIMARY KEY IDENTITY (1,1), -->
+	<!-- Code NVARCHAR (10) NOT NULL, -->
+	<!-- Name NVARCHAR (50) NOT NULL -->
+<!-- ); -->
 
-CREATE TABLE Hotel
-(
-	Id INT PRIMARY KEY IDENTITY (1,1),
-	Name NVARCHAR (50) NOT NULL,
-	Address NVARCHAR (200) NOT NULL,
-	PostCode NVARCHAR (10) NOT NULL,
-	City NVARCHAR (50) NOT NULL,
-	CountryId INT FOREIGN KEY REFERENCES Country(Id) NOT NULL,
-	Phone NVARCHAR (10) NOT NULL	
-);
+<!-- CREATE TABLE Hotel -->
+<!-- ( -->
+	<!-- Id INT PRIMARY KEY IDENTITY (1,1), -->
+	<!-- Name NVARCHAR (50) NOT NULL, -->
+	<!-- Address NVARCHAR (200) NOT NULL, -->
+	<!-- PostCode NVARCHAR (10) NOT NULL, -->
+	<!-- City NVARCHAR (50) NOT NULL, -->
+	<!-- CountryId INT FOREIGN KEY REFERENCES Country(Id) NOT NULL, -->
+	<!-- Phone NVARCHAR (10) NOT NULL	 -->
+<!-- ); -->
 
-CREATE TABLE Customer
-(
-	Id INT PRIMARY KEY IDENTITY (1,1),
-	FirstName NVARCHAR (50) NOT NULL,
-	LastName NVARCHAR (50) NOT NULL,
-	Address NVARCHAR (200) NOT NULL,
-	City NVARCHAR (50) NOT NULL,
-	PostCode NVARCHAR (10) NOT NULL,
-	DateOfBirth date NOT NULL,
-	Phone NVARCHAR (10) NOT NULL,
-	Email NVARCHAR (50) NOT NULL,
-	IsMale bit NOT NULL
-);
+<!-- CREATE TABLE Customer -->
+<!-- ( -->
+	<!-- Id INT PRIMARY KEY IDENTITY (1,1), -->
+	<!-- FirstName NVARCHAR (50) NOT NULL, -->
+	<!-- LastName NVARCHAR (50) NOT NULL, -->
+	<!-- Address NVARCHAR (200) NOT NULL, -->
+	<!-- City NVARCHAR (50) NOT NULL, -->
+	<!-- PostCode NVARCHAR (10) NOT NULL, -->
+	<!-- DateOfBirth date NOT NULL, -->
+	<!-- Phone NVARCHAR (10) NOT NULL, -->
+	<!-- Email NVARCHAR (50) NOT NULL, -->
+	<!-- IsMale bit NOT NULL -->
+<!-- ); -->
 
-CREATE TABLE RoomType
-(
-	Id INT PRIMARY KEY IDENTITY (1,1),
-	Name NVARCHAR (50) NOT NULL,
-	Description NVARCHAR (250) NOT NULL,
-	RoomPrice money NOT NULL,
-	MaxGuests INT NOT NULL
-);
+<!-- CREATE TABLE RoomType -->
+<!-- ( -->
+	<!-- Id INT PRIMARY KEY IDENTITY (1,1), -->
+	<!-- Name NVARCHAR (50) NOT NULL, -->
+	<!-- Description NVARCHAR (250) NOT NULL, -->
+	<!-- RoomPrice money NOT NULL, -->
+	<!-- MaxGuests INT NOT NULL -->
+<!-- ); -->
 
-CREATE TABLE Room
-(
-	Id INT PRIMARY KEY IDENTITY (1,1),
-	RoomNumber INT NOT NULL,
-	HotelId INT FOREIGN KEY REFERENCES Hotel(Id) NOT NULL,
-	RoomTypeId INT FOREIGN KEY REFERENCES RoomType(Id) NOT NULL,--??
-	IsSmoking bit NOT NULL
-);
+<!-- CREATE TABLE Room -->
+<!-- ( -->
+	<!-- Id INT PRIMARY KEY IDENTITY (1,1), -->
+	<!-- RoomNumber INT NOT NULL, -->
+	<!-- HotelId INT FOREIGN KEY REFERENCES Hotel(Id) NOT NULL, -->
+	<!-- RoomTypeId INT FOREIGN KEY REFERENCES RoomType(Id) NOT NULL,--?? -->
+	<!-- IsSmoking bit NOT NULL -->
+<!-- ); -->
 
-CREATE TABLE Reservation
-(
-	Id INT PRIMARY KEY IDENTITY (1,1),
-	ReservationDate date NOT NULL,
-	CustomerId INT FOREIGN KEY REFERENCES Customer(Id) NOT NULL,
-	RoomId INT FOREIGN KEY REFERENCES Room(Id) NOT NULL,
-	NumberGuests INT NOT NULL,
-	CheckInDate date NOT NULL,
-	CheckOutDate date NOT NULL
-);</code>
-</pre>
+<!-- CREATE TABLE Reservation -->
+<!-- ( -->
+	<!-- Id INT PRIMARY KEY IDENTITY (1,1), -->
+	<!-- ReservationDate date NOT NULL, -->
+	<!-- CustomerId INT FOREIGN KEY REFERENCES Customer(Id) NOT NULL, -->
+	<!-- RoomId INT FOREIGN KEY REFERENCES Room(Id) NOT NULL, -->
+	<!-- NumberGuests INT NOT NULL, -->
+	<!-- CheckInDate date NOT NULL, -->
+	<!-- CheckOutDate date NOT NULL -->
+<!-- );</code> -->
+<!-- </pre> -->
 			
 	  </div>
 		
@@ -379,65 +427,65 @@ LEFT JOIN Hotel H ON R.HotelId = H.Id;</code>
 </pre>
 			
 
-			<div class="container project-container">
-			</div>
+			<!-- <div class="container project-container"> -->
+			<!-- </div> -->
 			
-			<h4>Reservation Listing for a specified time range</h4>
-			<p>The following query provides details regarding all reservations that have been created in the time range between 02.05.2018 – 10.05.2018:</p>
+			<!-- <h4>Reservation Listing for a specified time range</h4> -->
+			<!-- <p>The following query provides details regarding all reservations that have been created in the time range between 02.05.2018 – 10.05.2018:</p> -->
 			
-			<pre class='language-sql'>
-<code>SELECT RR.ReservationDate, C.FirstName, C.LastName, R.RoomNumber, RR.NumberGuests, RR.CheckInDate, RR.CheckOutDate, H.Name HotelName
-FROM Reservation RR
-LEFT JOIN Customer C ON RR.CustomerId = C.Id
-LEFT JOIN Room R ON RR.RoomId = R.Id
-LEFT JOIN Hotel H ON R.HotelId = H.Id
-WHERE RR.ReservationDate BETWEEN '2018-05-02' AND '2018-05-10'
-ORDER BY RR.ReservationDate ASC;</pre>
-			</code>
+			<!-- <pre class='language-sql'> -->
+<!-- <code>SELECT RR.ReservationDate, C.FirstName, C.LastName, R.RoomNumber, RR.NumberGuests, RR.CheckInDate, RR.CheckOutDate, H.Name HotelName -->
+<!-- FROM Reservation RR -->
+<!-- LEFT JOIN Customer C ON RR.CustomerId = C.Id -->
+<!-- LEFT JOIN Room R ON RR.RoomId = R.Id -->
+<!-- LEFT JOIN Hotel H ON R.HotelId = H.Id -->
+<!-- WHERE RR.ReservationDate BETWEEN '2018-05-02' AND '2018-05-10' -->
+<!-- ORDER BY RR.ReservationDate ASC;</pre> -->
+			<!-- </code> -->
 			
 			
-			<div class="container project-container">
-			</div>
-			<h4>Reservation Listing for a specific time range and specific hotel</h4>
-			<p>The following query provides details regarding all reservations that have been created in the time range between 02.05.2018 – 10.05.2018 for Grand Hotel London:</p>
-			<pre class='language-sql'>
-<code>SELECT RR.ReservationDate, C.FirstName, C.LastName, R.RoomNumber, RR.NumberGuests, RR.CheckInDate, RR.CheckOutDate, H.Name HotelName
-FROM Reservation RR
-LEFT JOIN Customer C ON RR.CustomerId = C.Id
-LEFT JOIN Room R ON RR.RoomId = R.Id
-LEFT JOIN Hotel H ON R.HotelId = H.Id
-WHERE RR.ReservationDate BETWEEN '2018-05-02' AND '2018-05-10'
-AND H.Id = 7 
-ORDER BY RR.ReservationDate ASC, C.FirstName ASC, C.LastName ASC;</code>
-</pre>
+			<!-- <div class="container project-container"> -->
+			<!-- </div> -->
+			<!-- <h4>Reservation Listing for a specific time range and specific hotel</h4> -->
+			<!-- <p>The following query provides details regarding all reservations that have been created in the time range between 02.05.2018 – 10.05.2018 for Grand Hotel London:</p> -->
+			<!-- <pre class='language-sql'> -->
+<!-- <code>SELECT RR.ReservationDate, C.FirstName, C.LastName, R.RoomNumber, RR.NumberGuests, RR.CheckInDate, RR.CheckOutDate, H.Name HotelName -->
+<!-- FROM Reservation RR -->
+<!-- LEFT JOIN Customer C ON RR.CustomerId = C.Id -->
+<!-- LEFT JOIN Room R ON RR.RoomId = R.Id -->
+<!-- LEFT JOIN Hotel H ON R.HotelId = H.Id -->
+<!-- WHERE RR.ReservationDate BETWEEN '2018-05-02' AND '2018-05-10' -->
+<!-- AND H.Id = 7  -->
+<!-- ORDER BY RR.ReservationDate ASC, C.FirstName ASC, C.LastName ASC;</code> -->
+<!-- </pre> -->
 			
 
-			<div class="container project-container">
-			</div>
-			<h4>Total Count Hotels</h4>
-			<p>The following query shows the total number of hotels:</p>
+			<!-- <div class="container project-container"> -->
+			<!-- </div> -->
+			<!-- <h4>Total Count Hotels</h4> -->
+			<!-- <p>The following query shows the total number of hotels:</p> -->
 			
-			<pre class='language-sql'>
-<code>SELECT COUNT(*) TotalCountHotels
-FROM Hotel;</code>
-</pre>
+			<!-- <pre class='language-sql'> -->
+<!-- <code>SELECT COUNT(*) TotalCountHotels -->
+<!-- FROM Hotel;</code> -->
+<!-- </pre> -->
 
 
-			<div class="container project-container">
-			</div>
-			<h4>Total Reservations per day for a specific hotel in a specific timerange</h4>
-			<p>The following query provides details regarding total number of reservations that have been created in the time range between 02.05.2018 – 10.05.2018, on a daily basis, for Grand Hotel London:</p>
-			<pre class='language-sql'>
-<code>SELECT RR.ReservationDate, COUNT(*) TotalReservations
-FROM Reservation RR
-LEFT JOIN Customer C ON RR.CustomerId = C.Id
-LEFT JOIN Room R ON RR.RoomId = R.Id
-LEFT JOIN Hotel H ON R.HotelId = H.Id
-WHERE RR.ReservationDate BETWEEN '2018-05-02' AND '2018-05-10'
-AND H.Id = 7
-GROUP BY RR.ReservationDate
-ORDER BY RR.ReservationDate ASC;</pre>
-			</code>
+			<!-- <div class="container project-container"> -->
+			<!-- </div> -->
+			<!-- <h4>Total Reservations per day for a specific hotel in a specific timerange</h4> -->
+			<!-- <p>The following query provides details regarding total number of reservations that have been created in the time range between 02.05.2018 – 10.05.2018, on a daily basis, for Grand Hotel London:</p> -->
+			<!-- <pre class='language-sql'> -->
+<!-- <code>SELECT RR.ReservationDate, COUNT(*) TotalReservations -->
+<!-- FROM Reservation RR -->
+<!-- LEFT JOIN Customer C ON RR.CustomerId = C.Id -->
+<!-- LEFT JOIN Room R ON RR.RoomId = R.Id -->
+<!-- LEFT JOIN Hotel H ON R.HotelId = H.Id -->
+<!-- WHERE RR.ReservationDate BETWEEN '2018-05-02' AND '2018-05-10' -->
+<!-- AND H.Id = 7 -->
+<!-- GROUP BY RR.ReservationDate -->
+<!-- ORDER BY RR.ReservationDate ASC;</pre> -->
+			<!-- </code> -->
 
 			
 			<div class="container project-container">
@@ -457,48 +505,54 @@ ORDER BY RR.ReservationDate ASC, C.FirstName ASC, C.LastName ASC;</code>
 </pre>
 
 			
-			<div class="container project-container">
-			</div>
-			<h4>Number of reservations by Reservation Date, by Customer for a specific range for number of reservations</h4>
-			<p>The following query provides details regarding the Customers who made more than one reservation and less than five reservations, in the time range between 01.05.2018 – 20.05.2018, for Grand Hotel London:</p>
-			<pre class='language-sql'>
-<code>SELECT RR.ReservationDate, C.FirstName, C.LastName, COUNT(*) TotalReservations
-FROM Reservation RR
-LEFT JOIN Customer C ON RR.CustomerId = C.Id
-LEFT JOIN Room R ON RR.RoomId = R.Id
-LEFT JOIN Hotel H ON R.HotelId = H.Id
-WHERE RR.ReservationDate BETWEEN '2018-05-01' AND '2018-05-20'
-AND H.Id = 7
-GROUP BY RR.ReservationDate, C.FirstName, C.LastName 
-HAVING COUNT(*) > 1 AND COUNT(*) < 5
-ORDER BY RR.ReservationDate ASC, C.FirstName ASC, C.LastName ASC;</code>
-</pre>
-	  </div>
+			<!-- <div class="container project-container"> -->
+			<!-- </div> -->
+			<!-- <h4>Number of reservations by Reservation Date, by Customer for a specific range for number of reservations</h4> -->
+			<!-- <p>The following query provides details regarding the Customers who made more than one reservation and less than five reservations, in the time range between 01.05.2018 – 20.05.2018, for Grand Hotel London:</p> -->
+			<!-- <pre class='language-sql'> -->
+<!-- <code>SELECT RR.ReservationDate, C.FirstName, C.LastName, COUNT(*) TotalReservations -->
+<!-- FROM Reservation RR -->
+<!-- LEFT JOIN Customer C ON RR.CustomerId = C.Id -->
+<!-- LEFT JOIN Room R ON RR.RoomId = R.Id -->
+<!-- LEFT JOIN Hotel H ON R.HotelId = H.Id -->
+<!-- WHERE RR.ReservationDate BETWEEN '2018-05-01' AND '2018-05-20' -->
+<!-- AND H.Id = 7 -->
+<!-- GROUP BY RR.ReservationDate, C.FirstName, C.LastName  -->
+<!-- HAVING COUNT(*) > 1 AND COUNT(*) < 5 -->
+<!-- ORDER BY RR.ReservationDate ASC, C.FirstName ASC, C.LastName ASC;</code> -->
+<!-- </pre> -->
+	  <!-- </div> -->
 
 	
 	
 	
-      <div class="container project-container">
+      <!-- <div class="container project-container"> -->
 	  
-			<h1>BUSINESS CASE</h1>			
+			<!-- <h1>BUSINESS CASE</h1>			 -->
 			
-			<p>The LuxHotel Smart Reservation System provides a solution to the current inefficient reservation system. It maximizes financial profitability and customer satisfaction.</p>			
+			<!-- <p>The LuxHotel Smart Reservation System provides a solution to the current inefficient reservation system. It maximizes financial profitability and customer satisfaction.</p>			 -->
 			
-			<h3>Profitability</h3>
-			<p>Increased revenue would result from decreased costs as less employees would be needed since reservations would be done directly by the customer. Technology should automate low-level jobs, and employees would be performing monitoring and other value added activities. There would be less administrative work and more time for building relationships with customers. In essence. customer satisfaction and loyalty is key for business success.</p>			
-			<p>In addition, management would be able see trends and patterns reservations. This would optimize the marketing strategy as they would make informed decisions regarding promotions, discounts and variable cost of the rooms.</p>
+			<!-- <h3>Profitability</h3> -->
+			<!-- <p>Increased revenue would result from decreased costs as less employees would be needed since reservations would be done directly by the customer. Technology should automate low-level jobs, and employees would be performing monitoring and other value added activities. There would be less administrative work and more time for building relationships with customers. In essence. customer satisfaction and loyalty is key for business success.</p>			 -->
+			<!-- <p>In addition, management would be able see trends and patterns reservations. This would optimize the marketing strategy as they would make informed decisions regarding promotions, discounts and variable cost of the rooms.</p> -->
 			
-			<h3>Customer Satisfaction</h3>
-			<p>The LuxHotel Smart Reservation System is flexible and accessible 24/7 for customers making reservations. There is no waiting time and it is simple to navigate online. Reduced waiting and time efficiency is linked to cost savings.</p>			
-			<p>The centralized data storage ensures data correctness and validity, as well as providing backup archiving for analysis purposes and influencing marketing strategies. It prevents over/double bookings and manual data errors. </p>
-			<p>Notably, customer satisfaction leads to loyalty, acquisition and retention, which is vital to a business.</p>
+			<!-- <h3>Customer Satisfaction</h3> -->
+			<!-- <p>The LuxHotel Smart Reservation System is flexible and accessible 24/7 for customers making reservations. There is no waiting time and it is simple to navigate online. Reduced waiting and time efficiency is linked to cost savings.</p>			 -->
+			<!-- <p>The centralized data storage ensures data correctness and validity, as well as providing backup archiving for analysis purposes and influencing marketing strategies. It prevents over/double bookings and manual data errors. </p> -->
+			<!-- <p>Notably, customer satisfaction leads to loyalty, acquisition and retention, which is vital to a business.</p> -->
 			
-			<h3>Efficiency</h3>
-			<p>The LuxHotel Smart Reservation System has a user-friendly platform, is intuitive to navigate and easily manageable. It is interactive and displays real-time availability and pricing. Furthermore, security is ensured and all personal information stays private through data encryption processes.</p>			
+			<!-- <h3>Efficiency</h3> -->
+			<!-- <p>The LuxHotel Smart Reservation System has a user-friendly platform, is intuitive to navigate and easily manageable. It is interactive and displays real-time availability and pricing. Furthermore, security is ensured and all personal information stays private through data encryption processes.</p>			 -->
 	  
-	  </div>
-	
+	  <!-- </div> -->
+	  
+	  
+		<div class="container project-container">
+	</div>
 
+	</div>
+	</div>
+	
 	
     <!-- About Section -->
     <section id="about" class="about-section text-center">
@@ -513,7 +567,8 @@ ORDER BY RR.ReservationDate ASC, C.FirstName ASC, C.LastName ASC;</code>
        <!-- </div> -->
     </section>
 	
-
+	
+	
     <!-- Contact Section ... ctrl Q to comment out or // ... --> 
     <section id="contact" class="contact-section bg-black">
       <div class="container">
