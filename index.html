@@ -1,3 +1,5 @@
+ <!-- jeca put DAX aexpressuiions and qlikview variable ins cript -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,6 +41,33 @@
 		}
 	</style>
 	
+	
+	<style>
+		.jeca {
+		<!-- border:1px solid black; -->
+		width:150px;
+		height:200px;
+		overflow:scroll;
+		overflow-y:scroll;
+		<!-- overflow-x:hidden;" -->
+		}
+	</style>
+	
+	
+	<style>
+		.jeca2 {
+		border:1px solid black;
+		width:150px;
+		height:100px;
+		overflow:scroll;
+		overflow-y:scroll;
+		overflow-x:hidden;"
+		}
+	</style>
+		
+	
+	<p style="height:250%;">
+	
 	<!-- i did this cos i made the heading a bit smaller for requiremnet specifications -->
 	<!-- </style> -->
 		<!-- h2 { -->
@@ -67,9 +96,9 @@
              <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#projects-power-bi">Power BI</a>
             </li>
-			<!-- <li class="nav-item"> -->
-              <!-- <a class="nav-link js-scroll-trigger" href="#projects-qlikview">QlikView</a> -->
-            <!-- </li> -->
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#projects-qlikview">QlikView</a>
+            </li>
            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#projects-sql-server">SQL Server</a>
             </li>
@@ -126,7 +155,7 @@
 		</div>
 	
 	
-		<div class="container project-container2">
+		<div class="container project-container">
 				<!-- <p>The following dashboard for management reporting was creating in QlikView. It enables the user to filter the data by various dimensions and it shows management summaries through charts as well as reservation listing for hotel management staff:</p> -->
 				<img class="img-fluid mb-3 mb-lg-0" src="img/power_bi_report_reservations.png" alt="" img style="border:2px solid black">
 		</div>
@@ -140,7 +169,6 @@
 		<div class="container project-container2">
 			<p>The following is the data model within Power BI:</p>
 			<img class="img-fluid mb-3 mb-lg-0" src="img/power_bi_data_model.png" alt="" img style="border:2px solid black">
-			<!-- <img class="img-fluid mb-3 mb-lg-0" src="img/dashboard.png" alt="" img style="border:2px solid black"> -->
 		</div>
 	
 	</div>
@@ -148,184 +176,200 @@
 
 	
 	
-   <!-- <div id="projects-qlikview" class="container project-container">	 -->
+   <div id="projects-qlikview" class="container project-container">	
 	
-	    <!-- <div class="container project-container"> -->
-		<!-- <h5 style="font-size:2.5rem;">QLIKVIEW DATA VISUALISATION</h5> -->
-	<!-- </div> -->
-		<!-- <div class="container project-container2"> -->
-				<!-- <p>The following dashboard for management reporting was creating in QlikView. It enables the user to filter the data by various dimensions and it shows management summaries through charts as well as reservation listing for hotel management staff:</p> -->
-				<!-- <img class="img-fluid mb-3 mb-lg-0" src="img/dashboard.png" alt="" img style="border:2px solid black"> -->
-		<!-- </div> -->
-	<!-- <div class="container project-container"> -->
-	<!-- </div> -->
+	    <div class="container project-container">
+		<h5 style="font-size:2.5rem;">QLIKVIEW DATA VISUALISATION</h5>
+	</div>
+		<div class="container project-container2">
+				<p>The following dashboard for management reporting was creating in QlikView. It enables the user to filter the data by various dimensions and it shows management summaries through charts as well as reservation listing for hotel management staff:</p>
+				<img class="img-fluid mb-3 mb-lg-0" src="img/qlikview1.png" alt="" img style="border:2px solid black">
+		</div>
+	<div class="container project-container">
+	</div>
+	
+		<div class="container project-container2">
+				<img class="img-fluid mb-3 mb-lg-0" src="img/qlikview2.png" alt="" img style="border:2px solid black">
+		</div>
+
+
+	<div class="container project-container">
+	</div>
 	
 	
-	
 
-	<!-- <div class="container project-container"> -->
-		<!-- <h1>QLIKVIEW DATA MODEL</h1> -->
-	<!-- </div> -->
-		<!-- <div class="container project-container2"> -->
-			<!-- <p>The following is the data model within QlikView:</p> -->
-			<!-- <img class="img-fluid mb-3 mb-lg-0" src="img/datamodel.png" alt="" img style="border:2px solid black"> -->
-		<!-- </div> -->
-
-			
-
-
- 			<!-- <h1>QLIKVIEW LOAD SCRIPT</h1>			 -->
-<!-- <p>Connecting to the database in SQL Server:</p> -->
-<!-- <pre class='language-sql'> -->
-<!-- <code>OLEDB CONNECT TO [Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=HotelDb;Data Source=JECA-THINK;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=JECA-THINK;Use Encryption for Data=False;Tag with column collation when possible=False];</code> -->
-<!-- </pre> -->
-
-
-<!-- <p>Loading SQL Server Database Tables:</p> -->
-<!-- <pre class='language-sql'> -->
-<!-- <code>QUALIFY *; -->
-
-<!-- UNQUALIFY Hotel.Id, Customer.Id, Room.Id, RoomType.Id, Hotel.Id, Country.Id; -->
-
-<!-- LOAD Id, -->
-    <!-- ReservationDate as Date, -->
-    <!-- CustomerId as Customer.Id, -->
-    <!-- RoomId as Room.Id, -->
-    <!-- NumberGuests, -->
-    <!-- CheckInDate, -->
-    <!-- CheckOutDate; -->
-<!-- SQL SELECT * -->
-<!-- FROM HotelDb.dbo.Reservation; -->
-
-<!-- STORE Reservation INTO [C:\Users\Jeca\Documents\qvd\Reservation.qvd]; -->
-
-<!-- LOAD Id, -->
-    <!-- Name, -->
-    <!-- Address, -->
-    <!-- PostCode, -->
-    <!-- City, -->
-    <!-- CountryId as Country.Id, -->
-    <!-- Phone; -->
-<!-- SQL SELECT * -->
-<!-- FROM HotelDb.dbo.Hotel; -->
-
-<!-- STORE Hotel INTO [C:\Users\Jeca\Documents\qvd\Hotel.qvd]; -->
-
-<!-- LOAD Id, -->
-    <!-- Code, -->
-    <!-- Name; -->
-<!-- SQL SELECT * -->
-<!-- FROM HotelDb.dbo.Country; -->
-
-<!-- STORE Country INTO [C:\Users\Jeca\Documents\qvd\Country.qvd]; -->
-
-<!-- LOAD Id, -->
-    <!-- FirstName, -->
-    <!-- LastName, -->
-    <!-- Address, -->
-    <!-- City, -->
-    <!-- PostCode, -->
-    <!-- DateOfBirth, -->
-    <!-- Phone, -->
-    <!-- Email, -->
-    <!-- IsMale; -->
-<!-- SQL SELECT * -->
-<!-- FROM HotelDb.dbo.Customer; -->
-
-<!-- STORE Customer INTO [C:\Users\Jeca\Documents\qvd\Customer.qvd]; -->
-
-<!-- Room: -->
-<!-- LOAD Id, -->
-    <!-- RoomNumber as Number, -->
-    <!-- HotelId as Hotel.Id, -->
-    <!-- RoomTypeId as RoomType.Id, -->
-    <!-- IsSmoking; -->
-<!-- SQL SELECT * -->
-<!-- FROM HotelDb.dbo.Room; -->
-
-<!-- STORE Room INTO [C:\Users\Jeca\Documents\qvd\Room.qvd]; -->
-
-<!-- LOAD Id, -->
-    <!-- Name, -->
-    <!-- Description, -->
-    <!-- RoomPrice as Price, -->
-    <!-- MaxGuests; -->
-<!-- SQL SELECT * -->
-<!-- FROM HotelDb.dbo.RoomType; -->
-
-<!-- STORE RoomType INTO [C:\Users\Jeca\Documents\qvd\RoomType.qvd];</code> -->
-<!-- </pre> -->
-
-<!-- <p>Loading qvd Table Files:</p> -->
-<!-- <pre class='language-sql'> -->
-<!-- <code>LOAD Country.Id,  -->
-     <!-- Country.Code,  -->
-     <!-- Country.Name -->
-<!-- FROM -->
-<!-- [C:\Users\Jeca\Documents\qvd\Country.qvd] -->
-<!-- (qvd); -->
-
-<!-- LOAD Customer.Id,  -->
-     <!-- Customer.FirstName,  -->
-     <!-- Customer.LastName,  -->
-     <!-- Customer.Address,  -->
-     <!-- Customer.City,  -->
-     <!-- Customer.PostCode,  -->
-     <!-- Customer.DateOfBirth,  -->
-     <!-- Customer.Phone,  -->
-     <!-- Customer.Email,  -->
-     <!-- Customer.IsMale -->
-<!-- FROM -->
-<!-- [C:\Users\Jeca\Documents\qvd\Customer.qvd] -->
-<!-- (qvd); -->
-
-<!-- LOAD Hotel.Id,  -->
-     <!-- Hotel.Name,  -->
-     <!-- Hotel.Address,  -->
-     <!-- Hotel.PostCode,  -->
-     <!-- Hotel.City,  -->
-     <!-- Country.Id,  -->
-     <!-- Hotel.Phone -->
-<!-- FROM -->
-<!-- [C:\Users\Jeca\Documents\qvd\Hotel.qvd] -->
-<!-- (qvd); -->
-
-<!-- LOAD Reservation.Id,  -->
-     <!-- Reservation.Date,  -->
-     <!-- Customer.Id,  -->
-     <!-- Room.Id,  -->
-     <!-- Reservation.NumberGuests,  -->
-     <!-- Reservation.CheckInDate,  -->
-     <!-- Reservation.CheckOutDate -->
-<!-- FROM -->
-<!-- [C:\Users\Jeca\Documents\qvd\Reservation.qvd] -->
-<!-- (qvd); -->
-
-<!-- LOAD Room.Id,  -->
-     <!-- Room.Number,  -->
-     <!-- Hotel.Id,  -->
-     <!-- RoomType.Id,  -->
-     <!-- Room.IsSmoking -->
-<!-- FROM -->
-<!-- [C:\Users\Jeca\Documents\qvd\Room.qvd] -->
-<!-- (qvd); -->
-
-<!-- LOAD RoomType.Id,  -->
-     <!-- RoomType.Name,  -->
-     <!-- RoomType.Description,  -->
-     <!-- RoomType.Price,  -->
-     <!-- RoomType.MaxGuests -->
-<!-- FROM -->
-<!-- [C:\Users\Jeca\Documents\qvd\RoomType.qvd] -->
-<!-- (qvd);</code> -->
-<!-- </pre> -->
-	  
-	  <!-- </div> -->
-
-
-
+	<div class="container project-container2">
+		<h1>QLIKVIEW DATA MODEL</h1>
+	</div>
+		<div class="container project-container2">
+			<p>The following is the data model within QlikView:</p>
+			<img class="img-fluid mb-3 mb-lg-0" src="img/datamodelqlikview.png" alt="" img style="border:2px solid black">
+		</div>
 
 		
+	<div class="container project-container">
+			<h1>QLIKVIEW LOAD SCRIPT</h1>	
+	</div>	
+<div class="container project-container2">
+	
+<p>Connecting to the database in SQL Server:</p>
+<pre class='language-sql'>
+<code>OLEDB CONNECT TO [Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=HotelDb;Data Source=JECA-THINK;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=JECA-THINK;Use Encryption for Data=False;Tag with column collation when possible=False];</code>
+</pre>
+
+	<div class="container project-container2">
+	</div>	
+	
+<p>Loading SQL Server Database Tables:</p>
+<div class="jeca">
+<pre class='language-sql'>
+<code>LOAD Id as CountryId,	
+    Code,
+    Name as CountryName;
+SQL SELECT *
+FROM HotelDb.dbo.Country;
+
+STORE Country INTO [$(vQvdFiles)Country.qvd];
+
+LOAD Id as CustomerId,
+    FirstName,
+    LastName,
+    Address as CustomerAddress,
+    City as CustomerCity,
+    PostCode as CustoemrPostCode,
+    Phone as CustomerPhone,
+    DateOfBirth,
+    Email,
+    IsMale;
+SQL SELECT *
+FROM HotelDb.dbo.Customer;
+
+STORE Customer INTO [$(vQvdFiles)Customer.qvd];
+
+LOAD Id as HotelId,
+    Name as HotelName,
+    Address as HotelAddress,
+    PostCode as HotelPostCode,
+    City as HotelCity,
+    CountryId,
+    Phone as HotelPhone;
+SQL SELECT *
+FROM HotelDb.dbo.Hotel;
+
+STORE Hotel INTO [$(vQvdFiles)Hotel.qvd];
+
+LOAD Id as ReservationId,
+    ReservationDate,
+    YEAR(ReservationDate) as Year,
+    MONTH(ReservationDate) as MonthName,
+    num(MONTH(ReservationDate)) as Month,
+    dual('Q'&Ceil(MONTH(ReservationDate)/3),Ceil(MONTH(ReservationDate)/3)) as Quarter,
+    CustomerId,
+    RoomId,
+    NumberGuests,
+    CheckInDate,
+    CheckOutDate;
+SQL SELECT *
+FROM HotelDb.dbo.Reservation;
+
+STORE Reservation INTO [$(vQvdFiles)Reservation.qvd];
+
+LOAD Id as RoomId,
+    RoomNumber as Number,
+    RoomTypeId,
+    HotelId,
+    IsSmoking;
+SQL SELECT *
+FROM HotelDb.dbo.Room;
+
+STORE Room INTO [$(vQvdFiles)Room.qvd];
+
+LOAD Id as RoomTypeId,
+    Name as RoomTypeName,
+    Description,
+    RoomPrice as Price,
+    MaxGuests;
+SQL SELECT *
+FROM HotelDb.dbo.RoomType;
+
+STORE RoomType INTO [$(vQvdFiles)RoomType.qvd];</code>
+</pre>
+</div>
+
+	<div class="container project-container2">
+	</div>	
+	
+	
+<p>Loading qvd Table Files:</p>
+<div class="jeca">
+<pre class='language-sql'>
+<code>LOAD CountryId, 
+     Code, 
+     CountryName
+FROM
+[$(vQvdFiles)Country.qvd] 
+(qvd);
+
+LOAD CustomerId, 
+     FirstName, 
+     LastName, 
+     CustomerAddress, 
+     CustomerCity, 
+     CustoemrPostCode, 
+     CustomerPhone, 
+     DateOfBirth, 
+     Email, 
+     IsMale
+FROM
+[$(vQvdFiles)Customer.qvd]
+(qvd);
+
+LOAD HotelId, 
+     HotelName, 
+     HotelAddress, 
+     HotelPostCode, 
+     HotelCity, 
+     CountryId, 
+     HotelPhone
+FROM
+[$(vQvdFiles)Hotel.qvd]
+(qvd);
+
+LOAD ReservationId, 
+     ReservationDate, 
+     Year, 
+     MonthName, 
+     Month, 
+     Quarter, 
+     CustomerId, 
+     RoomId, 
+     NumberGuests, 
+     CheckInDate, 
+     CheckOutDate
+FROM
+[$(vQvdFiles)Reservation.qvd]
+(qvd);
+
+LOAD RoomId, 
+     Number, 
+     RoomTypeId, 
+     HotelId, 
+     IsSmoking
+FROM
+[$(vQvdFiles)Room.qvd]
+(qvd);
+
+LOAD RoomTypeId, 
+     RoomTypeName, 
+     Description, 
+     Price, 
+     MaxGuests
+FROM
+[$(vQvdFiles)RoomType.qvd]
+(qvd);</code>
+</pre>
+</div>
+</div>
 
 
 
@@ -340,73 +384,76 @@
 			
 	
 
-      <!-- <div class="container project-container"> -->
-			<!-- <h1>DATABASE SCHEMA (SQL SERVER)</h1>			 -->
-			<!-- <p>The following script was executed in SQL Server to create the database system:</p> -->
-			<!-- <pre class='language-sql'> -->
-<!-- <code>CREATE TABLE Country -->
-<!-- ( -->
-	<!-- Id INT PRIMARY KEY IDENTITY (1,1), -->
-	<!-- Code NVARCHAR (10) NOT NULL, -->
-	<!-- Name NVARCHAR (50) NOT NULL -->
-<!-- ); -->
+      <div class="container project-container">
+			<h1>DATABASE SCHEMA (SQL SERVER)</h1>			
+			<p>The following script was executed in SQL Server to create the database system:</p>
+<div class="jeca">
+			<pre class='language-sql'>
+<code>CREATE TABLE Country
+(
+	Id INT PRIMARY KEY IDENTITY (1,1),
+	Code NVARCHAR (10) NOT NULL,
+	Name NVARCHAR (50) NOT NULL
+);
 
-<!-- CREATE TABLE Hotel -->
-<!-- ( -->
-	<!-- Id INT PRIMARY KEY IDENTITY (1,1), -->
-	<!-- Name NVARCHAR (50) NOT NULL, -->
-	<!-- Address NVARCHAR (200) NOT NULL, -->
-	<!-- PostCode NVARCHAR (10) NOT NULL, -->
-	<!-- City NVARCHAR (50) NOT NULL, -->
-	<!-- CountryId INT FOREIGN KEY REFERENCES Country(Id) NOT NULL, -->
-	<!-- Phone NVARCHAR (10) NOT NULL	 -->
-<!-- ); -->
+CREATE TABLE Hotel
+(
+	Id INT PRIMARY KEY IDENTITY (1,1),
+	Name NVARCHAR (50) NOT NULL,
+	Address NVARCHAR (200) NOT NULL,
+	PostCode NVARCHAR (10) NOT NULL,
+	City NVARCHAR (50) NOT NULL,
+	CountryId INT FOREIGN KEY REFERENCES Country(Id) NOT NULL,
+	Phone NVARCHAR (10) NOT NULL	
+);
 
-<!-- CREATE TABLE Customer -->
-<!-- ( -->
-	<!-- Id INT PRIMARY KEY IDENTITY (1,1), -->
-	<!-- FirstName NVARCHAR (50) NOT NULL, -->
-	<!-- LastName NVARCHAR (50) NOT NULL, -->
-	<!-- Address NVARCHAR (200) NOT NULL, -->
-	<!-- City NVARCHAR (50) NOT NULL, -->
-	<!-- PostCode NVARCHAR (10) NOT NULL, -->
-	<!-- DateOfBirth date NOT NULL, -->
-	<!-- Phone NVARCHAR (10) NOT NULL, -->
-	<!-- Email NVARCHAR (50) NOT NULL, -->
-	<!-- IsMale bit NOT NULL -->
-<!-- ); -->
+CREATE TABLE Customer
+(
+	Id INT PRIMARY KEY IDENTITY (1,1),
+	FirstName NVARCHAR (50) NOT NULL,
+	LastName NVARCHAR (50) NOT NULL,
+	Address NVARCHAR (200) NOT NULL,
+	City NVARCHAR (50) NOT NULL,
+	PostCode NVARCHAR (10) NOT NULL,
+	DateOfBirth date NOT NULL,
+	Phone NVARCHAR (10) NOT NULL,
+	Email NVARCHAR (50) NOT NULL,
+	IsMale bit NOT NULL
+);
 
-<!-- CREATE TABLE RoomType -->
-<!-- ( -->
-	<!-- Id INT PRIMARY KEY IDENTITY (1,1), -->
-	<!-- Name NVARCHAR (50) NOT NULL, -->
-	<!-- Description NVARCHAR (250) NOT NULL, -->
-	<!-- RoomPrice money NOT NULL, -->
-	<!-- MaxGuests INT NOT NULL -->
-<!-- ); -->
+CREATE TABLE RoomType
+(
+	Id INT PRIMARY KEY IDENTITY (1,1),
+	Name NVARCHAR (50) NOT NULL,
+	Description NVARCHAR (250) NOT NULL,
+	RoomPrice money NOT NULL,
+	MaxGuests INT NOT NULL
+);
 
-<!-- CREATE TABLE Room -->
-<!-- ( -->
-	<!-- Id INT PRIMARY KEY IDENTITY (1,1), -->
-	<!-- RoomNumber INT NOT NULL, -->
-	<!-- HotelId INT FOREIGN KEY REFERENCES Hotel(Id) NOT NULL, -->
-	<!-- RoomTypeId INT FOREIGN KEY REFERENCES RoomType(Id) NOT NULL,--?? -->
-	<!-- IsSmoking bit NOT NULL -->
-<!-- ); -->
+CREATE TABLE Room
+(
+	Id INT PRIMARY KEY IDENTITY (1,1),
+	RoomNumber INT NOT NULL,
+	HotelId INT FOREIGN KEY REFERENCES Hotel(Id) NOT NULL,
+	RoomTypeId INT FOREIGN KEY REFERENCES RoomType(Id) NOT NULL,--??
+	IsSmoking bit NOT NULL
+);
 
-<!-- CREATE TABLE Reservation -->
-<!-- ( -->
-	<!-- Id INT PRIMARY KEY IDENTITY (1,1), -->
-	<!-- ReservationDate date NOT NULL, -->
-	<!-- CustomerId INT FOREIGN KEY REFERENCES Customer(Id) NOT NULL, -->
-	<!-- RoomId INT FOREIGN KEY REFERENCES Room(Id) NOT NULL, -->
-	<!-- NumberGuests INT NOT NULL, -->
-	<!-- CheckInDate date NOT NULL, -->
-	<!-- CheckOutDate date NOT NULL -->
-<!-- );</code> -->
-<!-- </pre> -->
+CREATE TABLE Reservation
+(
+	Id INT PRIMARY KEY IDENTITY (1,1),
+	ReservationDate date NOT NULL,
+	CustomerId INT FOREIGN KEY REFERENCES Customer(Id) NOT NULL,
+	RoomId INT FOREIGN KEY REFERENCES Room(Id) NOT NULL,
+	NumberGuests INT NOT NULL,
+	CheckInDate date NOT NULL,
+	CheckOutDate date NOT NULL
+);</code>
+</pre>
 			
 	  </div>
+	  </div>
+	  
 		
       <div class="container project-container">
 	  
@@ -546,6 +593,7 @@ ORDER BY RR.ReservationDate ASC, C.FirstName ASC, C.LastName ASC;</code>
 		<div class="container project-container">
 	</div>
 
+	</div>
 	</div>
 	</div>
 	
